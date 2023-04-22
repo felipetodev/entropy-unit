@@ -4,6 +4,7 @@ specifiers:
   '@types/node': 18.15.13
   '@types/react': 18.0.38
   '@types/react-dom': 18.0.11
+  '@vercel/analytics': 1.0.0
   autoprefixer: 10.4.14
   next: 13.3.1
   postcss: 8.4.23
@@ -16,6 +17,7 @@ dependencies:
   '@types/node': 18.15.13
   '@types/react': 18.0.38
   '@types/react-dom': 18.0.11
+  '@vercel/analytics': 1.0.0_react@18.2.0
   autoprefixer: 10.4.14_postcss@8.4.23
   next: 13.3.1_biqbaboplfbrettd7655fr4n2y
   postcss: 8.4.23
@@ -196,6 +198,14 @@ packages:
 
   /@types/scheduler/0.16.3:
     resolution: {integrity: sha512-5cJ8CB4yAx7BH1oMvdU0Jh9lrEXyPkar6F9G/ERswkCuvP4KQZfZkSjcMbAICCpQTN4OuZn8tz0HiKv9TGZgrQ==}
+    dev: false
+
+  /@vercel/analytics/1.0.0_react@18.2.0:
+    resolution: {integrity: sha512-RQmj7pv82JwGDHrnKeRc6TtSw2U7rWNubc2IH0ernTzWTj02yr9zvIYiYJeztsBzrJtWv7m8Nz6vxxb+cdEtJw==}
+    peerDependencies:
+      react: ^16.8||^17||^18
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /any-promise/1.3.0:
