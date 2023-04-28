@@ -16,7 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Analytics />
+      {process.env.NODE_ENV === 'production' && (
+        <Analytics />
+      )}
       <body className={inter.className}>{children}</body>
     </html>
   )
