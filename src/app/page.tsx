@@ -5,7 +5,9 @@ export default function Home() {
       <img className="min-w-[1400px] top-[110px] absolute z-20 sm:top-[210px] left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="/coming-soon.png" alt="coming soon" />
       <img className="min-w-[50px] absolute z-50 top-[350px] sm:top-[500px] left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="/celta.svg" alt="main-logo" />
 
-      <img className='w-[300px] sm:min-w-[400px] top-[420px] absolute z-30 sm:top-[560px] object-cover max-w-[400px]' src="/cta.svg" alt="bg-entropy" />
+      <a href="https://www.instagram.com/thevowofnazka/" target="_blank" className="w-[300px] sm:min-w-[400px] top-[420px] absolute z-30 sm:top-[560px] object-cover max-w-[400px]">
+        <img src="/cta.svg" alt="bg-entropy" />
+      </a>
 
       <a href="mailto:entropyunit1@gmail.com" className="min-w-[200px] z-20 absolute top-[650px] sm:top-[790px] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <img src="/button.svg" alt="btn" />
