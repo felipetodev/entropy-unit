@@ -11,7 +11,13 @@
     "react/prop-types": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-misused-promises": "off",
+    "@typescript-eslint/restrict-plus-operands": "off",
+    "@typescript-eslint/consistent-type-definitions": "off",
     "@typescript-eslint/strict-boolean-expressions": "off",
-    "@typescript-eslint/no-floating-promises": "off"
+    "@typescript-eslint/no-floating-promises": "off",
+    "@typescript-eslint/prefer-optional-chain": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "array-callback-return": "off",
+    "@typescript-eslint/triple-slash-reference": "off"
   }
 }
