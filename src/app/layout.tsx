@@ -12,7 +12,7 @@ const baiJamjuree = Bai_Jamjuree({
 })
 
 export const metadata = {
-  title: 'Entropy Unit (soon)',
+  title: 'Entropy Unit',
   description: 'Entropy Unit Game Development'
 }
 
