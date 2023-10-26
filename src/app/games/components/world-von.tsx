@@ -25,7 +25,7 @@ function WorldVon () {
       <Marquee>
         {images.map((image, i) => (
           // create a random height and width for each image
-          <li key={i} className='h-max min-w-[450px] rounded-3xl overflow-hidden'>
+          <li key={i} className='h-max min-w-[350px] md:min-w-[450px] rounded-3xl overflow-hidden'>
             <img className='block h-full w-full object-cover' src={image} alt='tst' />
           </li>
         ))}
