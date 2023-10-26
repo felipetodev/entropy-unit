@@ -1,14 +1,20 @@
+'use client'
+
+import useNumberAnimation from '@/hooks/use-number-animation'
+import { motion } from 'framer-motion'
 
 function Release () {
+  const { ref, rounded } = useNumberAnimation()
+
   return (
     <section className='bg-gradient-to-b from-[#121212] from-20% to-100% to-entropy-red'>
       <div className='sm:-mt-[200px] sm:pt-[600px] pb-[150px] flex flex-col items-center justify-center font-transducer h-full px-5'>
-        <h2 className='text-entropy-slateGray text-xl sm:text-3xl font-semibold'>
+        <h2 ref={ref} className='text-entropy-slateGray text-xl sm:text-3xl font-semibold'>
           LANZAMIENTO
         </h2>
-        <h3 className='text-4xl sm:text-6xl md:text-8xl font-semibold'>
-          13.11.2023
-        </h3>
+        <motion.h3 className='text-4xl sm:text-6xl md:text-8xl font-semibold'>
+          {rounded}
+        </motion.h3>
         <div className='flex items-center space-x-6 py-4'>
           <svg width='15' height='16' viewBox='0 0 15 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
             <path d='M0 0.507568H7.11077V7.61526H0V0.507568ZM7.88923 0.507568H15V7.61526H7.88923V0.507568ZM0 8.3968H7.11077V15.5076H0V8.3968ZM7.88923 8.3968H15V15.5076H7.88923' fill='#F2F2F2' />
