@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react'
 
 export default function useNumberAnimation () {
   const ref = useRef(null)
-  const isInView = useInView(ref, { margin: '-200px', once: true })
+  const isInView = useInView(ref, { margin: '-150px', once: true })
   const count = useMotionValue(new Date('01/01/2023').getTime())
   const rounded = useTransform(count, (value) => {
     return new Date(Math.round(value))
