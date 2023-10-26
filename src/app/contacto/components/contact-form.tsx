@@ -26,14 +26,14 @@ function ContactForm () {
       <div className='sm:flex w-full'>
         <input
           required
-          className='w-full sm:w-[calc(100%-20px)] uppercase font-transducer bg-transparent outline-none py-4 placeholder:text-entropy-grayUnit placeholder:font-semibold border-t sm:border-y border-entropy-slateGray placeholder:focus:text-entropy-red placeholder:transition-all'
+          className='w-full sm:w-[calc(100%-20px)] uppercase font-transducer bg-transparent outline-none py-4 placeholder:text-entropy-grayUnit placeholder:font-semibold border-x-none rounded-none border-t sm:border-y border-entropy-slateGray placeholder:focus:text-entropy-red placeholder:transition-all'
           name='name'
           type='text'
           placeholder='Nombre'
         />
         <input
           required
-          className='sm:pl-[20px] sm:border-l w-full uppercase font-transducer bg-transparent outline-none py-4 placeholder:text-entropy-grayUnit placeholder:font-semibold border-y border-entropy-slateGray placeholder:focus:text-entropy-red placeholder:transition-all'
+          className='sm:pl-[20px] sm:border-l w-full uppercase font-transducer bg-transparent outline-none py-4 placeholder:text-entropy-grayUnit placeholder:font-semibold border-x-none rounded-none border-y border-entropy-slateGray placeholder:focus:text-entropy-red placeholder:transition-all'
           name='email'
           type='email'
           placeholder='Email'
@@ -44,14 +44,14 @@ function ContactForm () {
         name='subject'
         type='text'
         placeholder='Asunto'
-        className='uppercase font-transducer bg-transparent outline-none py-4 placeholder:text-entropy-grayUnit placeholder:font-semibold border-b border-entropy-slateGray placeholder:focus:text-entropy-red placeholder:transition-all'
+        className='uppercase font-transducer bg-transparent outline-none py-4 placeholder:text-entropy-grayUnit placeholder:font-semibold border-x-none rounded-none border-b border-entropy-slateGray placeholder:focus:text-entropy-red placeholder:transition-all'
       />
       <textarea
         required
         name='message'
         placeholder='Mensaje'
         autoComplete='off'
-        className='h-56 uppercase font-transducer bg-transparent outline-none py-4 placeholder:text-entropy-grayUnit placeholder:font-semibold border-b border-entropy-slateGray placeholder:focus:text-entropy-red placeholder:transition-all'
+        className='h-56 uppercase font-transducer bg-transparent outline-none py-4 placeholder:text-entropy-grayUnit placeholder:font-semibold border-x-none rounded-none border-b border-entropy-slateGray placeholder:focus:text-entropy-red placeholder:transition-all'
       />
       <span className='text-entropy-red my-5 font-transducer text-sm invisible'>
         INGRESA UN EMAIL VÁLIDO
