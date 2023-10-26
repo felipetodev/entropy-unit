@@ -7,7 +7,7 @@ export default function useNumberAnimation () {
   const count = useMotionValue(new Date('01/01/2023').getTime())
   const rounded = useTransform(count, (value) => {
     return new Date(Math.round(value))
-      .toLocaleDateString('en-US')
+      .toLocaleDateString('es-ES')
       .split('/')
       .map((n) => n.padStart(2, '0'))
       .join('.')
