@@ -19,7 +19,7 @@ function Subscribe () {
               placeholder='TU EMAIL'
               className='rounded-none uppercase font-transducer w-full bg-transparent outline-none py-4 placeholder:text-entropy-slateGray placeholder:font-semibold'
             />
-            <button className='rounded-md sm:rounded-none font-transducer h-16 px-4 bg-white text-black text font-semibold transition hover:bg-white/60'>
+            <button className='mx-auto w-max text-xs sm:text-base rounded-md sm:rounded-none font-transducer h-11 sm:h-16 px-4 bg-entropy-neutral text-entropy-black text font-semibold transition hover:bg-white/60'>
               SUSCRIBETE
             </button>
           </div>
