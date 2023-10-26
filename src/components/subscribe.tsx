@@ -7,24 +7,24 @@ function Subscribe () {
             <path d='M113.235 0.598999L95.365 18.469M97.465 0.598999L79.595 18.469M81.705 0.598999L63.835 18.469M65.935 0.598999L48.065 18.469M50.165 0.598999L32.305 18.469M34.405 0.598999L16.535 18.469M18.635 0.598999L0.765015 18.469' stroke='white' strokeMiterlimit='10' />
           </svg>
         </span>
-        <h2 className='text-center font-transducer text-lg sm:text-2xl lg:text-3xl font-semibold'>
+        <h2 className='[text-wrap:balance] text-center font-transducer text-lg sm:text-2xl lg:text-3xl font-semibold'>
           ÚNETE A NUESTRO BOLETÍN SEMANAL Y MANTENTE INFORMADO SOBRE EL DESARROLLO DE THE VOW OF NAZKA.
         </h2>
         <form action='' className='flex flex-col'>
-          <div className='flex w-full border-t border-b rounded-r-md overflow-hidden'>
+          <div className='flex flex-col sm:flex-row w-full sm:border-y sm:rounded-r-md overflow-hidden [&_input]:border-y sm:[&_input]:border-none gap-y-6 sm:gap-y-0'>
             <input
               required
               name='id'
               type='text'
               placeholder='TU EMAIL'
-              className='uppercase font-transducer w-full bg-transparent outline-none py-4 placeholder:text-entropy-slateGray placeholder:font-semibold'
+              className='rounded-none uppercase font-transducer w-full bg-transparent outline-none py-4 placeholder:text-entropy-slateGray placeholder:font-semibold'
             />
-            <button className='font-transducer h-16 px-4 bg-white text-black text font-semibold transition hover:bg-white/60'>
+            <button className='rounded-md sm:rounded-none font-transducer h-16 px-4 bg-white text-black text font-semibold transition hover:bg-white/60'>
               SUSCRIBETE
             </button>
           </div>
         </form>
-        <p className='font-transducer text-entropy-red font-semibold'>
+        <p className='text-xs sm:text-base text-center sm:text-start font-transducer text-entropy-red font-semibold'>
           INGRESA UN EMAIL VÁLIDO
         </p>
       </div>
