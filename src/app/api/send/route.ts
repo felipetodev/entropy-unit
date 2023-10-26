@@ -1,8 +1,8 @@
-import { EmailTemplate } from '@/components/EmailTemplate'
+import { EmailTemplate } from '@/components/email-template'
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+const resend = new Resend(process.env.RESEND_API_KEY ?? '')
 
 const domain = process.env.NODE_ENV === 'production'
   ? 'https://www.entropyunit.com'
