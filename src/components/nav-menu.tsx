@@ -8,7 +8,7 @@ function NavMenu () {
       initial={{ opacity: 0, y: -500 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -200 }}
-      transition={{ bounce: false, ease: 'easeInOut' }}
+      transition={{ bounce: false, ease: 'easeInOut', type: 'spring' }}
       className='fixed top-0 left-0 right-0 bottom-0 bg-entropy-blueUnit pt-[calc(20px+80px)] h-screen z-40 px-10 pb-10 overflow-hidden'
     >
       <div className='relative font-transducer flex flex-col justify-end h-full'>
