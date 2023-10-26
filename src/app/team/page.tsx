@@ -85,7 +85,7 @@ function TeamPage () {
         <div className='flex flex-col sm:flex-row font-transducer sm:h-[220px]'>
           {ROW_1.map((discipline, index) => (
             <div
-              key={index} className={cn('flex flex-1 flex-col p-4 lg:p-5 gap-y-5 border-b border-entropy-slateGray min-w-[180px]', {
+              key={index} className={cn('flex flex-1 flex-col py-4 sm:p-4 lg:p-5 gap-y-5 border-b border-entropy-slateGray min-w-[180px]', {
                 'sm:border-x': index === 1
               })}
             >
@@ -101,7 +101,7 @@ function TeamPage () {
         <div className='flex flex-col sm:flex-row font-transducer sm:h-[220px]'>
           {ROW_2.map((discipline, index) => (
             <div
-              key={index} className={cn('flex flex-1 flex-col p-4 lg:p-5 gap-y-5 border-b border-entropy-slateGray min-w-[180px]', {
+              key={index} className={cn('flex flex-1 flex-col py-4 sm:p-4 lg:p-5 gap-y-5 border-b border-entropy-slateGray min-w-[180px]', {
                 'sm:border-x': index === 1
               })}
             >
@@ -117,7 +117,7 @@ function TeamPage () {
         <div className='flex flex-col sm:flex-row font-transducer sm:h-[220px]'>
           {ROW_3.map((discipline, index) => (
             <div
-              key={index} className={cn('flex flex-1 flex-col p-4 lg:p-5 gap-y-5 border-b sm:border-b-transparent border-entropy-slateGray min-w-[180px]', {
+              key={index} className={cn('flex flex-1 flex-col py-4 sm:p-4 lg:p-5 gap-y-5 border-b sm:border-b-transparent border-entropy-slateGray min-w-[180px]', {
                 'sm:border-x': index === 1
               })}
             >
