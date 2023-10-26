@@ -7,7 +7,7 @@ function NavMenu () {
     <motion.div
       initial={{ opacity: 0, y: -500 }}
       animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -200 }}
+      exit={{ opacity: 0, y: -100, transition: { duration: 0.2 } }}
       transition={{ bounce: false, ease: 'easeInOut', type: 'spring' }}
       className='fixed top-0 left-0 right-0 bottom-0 bg-entropy-blueUnit pt-[calc(20px+80px)] h-screen z-40 px-10 pb-10 overflow-hidden'
     >
