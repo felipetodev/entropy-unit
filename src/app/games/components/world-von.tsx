@@ -10,7 +10,7 @@ const images = [
 
 function WorldVon () {
   return (
-    <section>
+    <section className='overflow-hidden'>
       <div className='flex items-center justify-center flex-col sm:flex-row'>
         <h2 className='text-7xl md:text-[7rem] font-semibold'>
           EL MUNDO
