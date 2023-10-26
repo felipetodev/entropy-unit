@@ -15,7 +15,14 @@ export default function useNumberAnimation () {
 
   useEffect(() => {
     if (!isInView) return
-    const animation = animate(count, new Date('11/13/2023').getTime(), { duration: 0.75 })
+    const animation = animate(
+      count,
+      new Date('11/13/2023').getTime(),
+      {
+        duration: 0.70,
+        type: 'spring'
+      }
+    )
 
     return animation.stop
   }, [isInView])
