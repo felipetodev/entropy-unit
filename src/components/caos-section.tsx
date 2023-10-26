@@ -9,6 +9,11 @@ function CaosSection () {
             src='/pj.png'
             alt='entropy pj'
           />
+          <div className='absolute top-[11px] z-20 mr-[38px] md:hidden'>
+            <span className='relative flex h-1 w-1'>
+              <span className='animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ff9fde] opacity-75' />
+            </span>
+          </div>
         </div>
         <div className='flex flex-col justify-center gap-y-10'>
           <h2 className='font-transducer text-xl sm:text-3xl lg:text-4xl font-semibold [text-wrap:balance]'>
