@@ -26,7 +26,10 @@ function BlogCarousel ({ cards }: Props) {
       <div className='embla z-20 overflow-hidden' ref={emblaRef}>
         <div className='embla__container container flex gap-x-10 mx-auto [&_figure]:rounded-[20px] [&_figure]:h-[262px] lg:[&_figure]:h-[350px] [&_figure]:min-w-[16rem] sm:[&_figure]:min-w-[23rem] lg:[&_figure]:min-w-[32rem]'>
           {cards.map((card) => (
-            <CarouselCard key={card.id} card={card} />
+            <CarouselCard
+              key={card.id}
+              card={card}
+            />
           ))}
         </div>
       </div>
