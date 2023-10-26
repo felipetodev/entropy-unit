@@ -16,7 +16,7 @@ function TheHero () {
           </p>
         </div>
         <div className='bg-neutral-500 h-[500px] rounded-3xl overflow-hidden'>
-          <video loop className='block object-none h-full w-full object-[50%,50%]' src='/ride.mp4' muted autoPlay />
+          <video playsInline loop className='block object-none h-full w-full object-[50%,50%]' src='/ride.mp4' muted autoPlay />
         </div>
         <Frame2 className='absolute w-full -left-20 sm:left-0 -top-40 sm:ml-20' />
       </div>

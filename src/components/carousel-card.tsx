@@ -19,7 +19,7 @@ function CarouselCard ({ card }: { card: Card }) {
     >
       <article className='relative grid gap-y-3 p-1 overflow-hidden rounded-[20px]'>
         <figure className='overflow-hidden z-10 border border-transparent group-hover:border-entropy-red/20'>
-          <video loop className='block h-full w-full object-cover' src='/video1.mp4' autoPlay muted />
+          <video playsInline loop className='block h-full w-full object-cover' src='/video1.mp4' autoPlay muted />
         </figure>
         <span className='z-10 font-transducer uppercase text-xs text-entropy-slateGray font-semibold'>
           {new Date(card.date).toLocaleDateString('en-US', { day: 'numeric', month: 'short' })}
