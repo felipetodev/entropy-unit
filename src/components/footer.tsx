@@ -9,7 +9,7 @@ function Footer () {
           <p className='md:mr-6 font-semibold text-xs lg:text-base'>
             MANTENTE AL DÍA
           </p>
-          <ul className='flex space-x-10 sm:space-x-8 items-center'>
+          <ul className='flex space-x-10 sm:space-x-8 items-center [&_a]:transition'>
             <li>
               <a className='hover:text-entropy-red' href='https://www.instagram.com/thevowofnazka' target='_blank' rel='noreferrer'>
                 <IconInstagram className='h-7 w-7 sm:w-5 sm:h-5 lg:w-7 lg:h-7' />
