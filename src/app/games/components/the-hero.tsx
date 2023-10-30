@@ -2,10 +2,10 @@ import { Frame2 } from '@/components/ui/frames'
 
 function TheHero () {
   return (
-    <section className='py-28 px-5 md:px-20 mt-20'>
+    <section className='py-28 px-5 md:px-20 mt-36'>
       <div className='relative grid grid-cols-1 md:grid-cols-2 gap-[40px] lg:gap-[100px] w-full h-full max-w-[2000px] mx-auto'>
-        <div className='order-last sm:order-none font-transducer flex flex-col justify-center gap-y-10 z-10'>
-          <h2 className='font-semibold text-4xl'>
+        <div className='order-last sm:order-none flex flex-col justify-center gap-y-10 z-10'>
+          <h2 className='font-semibold text-4xl font-transducer'>
             EL HÉROE
           </h2>
           <p>

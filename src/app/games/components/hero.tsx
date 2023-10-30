@@ -41,10 +41,10 @@ function GamesHero () {
             DESCARGA LA DEMO AHORA
           </button>
         </div>
-        <Link href='/games#the-journey' className='flex items-center justify-center sm:justify-normal gap-x-7 sm:self-end mt-[30px] sm:mt-auto'>
+        <Link href='/games#the-journey' className='flex items-center justify-center sm:justify-normal gap-x-5 sm:self-end mt-[30px] sm:mt-auto'>
           <p>Descubre más</p>
           <button>
-            <svg className='h-8 w-8 sm:w-16 sm:h-16' viewBox='0 0 70 71' fill='none'>
+            <svg className='h-8 w-8 sm:w-20 sm:h-20' viewBox='0 0 70 71' fill='none'>
               <path d='M42.8166 37.6943L35 45.5109M35 45.5109L27.1834 37.6943M35 45.5109V26.3948M69 35.5073C69 54.285 53.7777 69.5073 35 69.5073C16.2223 69.5073 1 54.285 1 35.5073C1 16.7296 16.2223 1.50732 35 1.50732C53.7777 1.50732 69 16.7296 69 35.5073Z' stroke='#F2F2F2' strokeWidth='2' strokeMiterlimit='10' />
             </svg>
           </button>

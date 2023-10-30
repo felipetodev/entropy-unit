@@ -7,8 +7,8 @@ function JourneySection () {
         <div className='bg-neutral-500 h-[500px] rounded-3xl overflow-hidden'>
           <video playsInline loop className='block object-none h-full w-full object-[50%,50%]' src='/ride.mp4' muted autoPlay />
         </div>
-        <div className='font-transducer flex flex-col justify-center gap-y-10 z-10'>
-          <h2 id='the-journey' className='scroll-m-[580px] sm:scroll-m-[260px] font-semibold text-4xl'>EL VIAJE</h2>
+        <div className='flex flex-col justify-center gap-y-10 z-10'>
+          <h2 id='the-journey' className='scroll-m-[580px] sm:scroll-m-[260px] font-semibold text-4xl font-transducer'>EL VIAJE</h2>
           <p>
             Acompaña al último cazador en su búsqueda por su identidad y la liberación de su pueblo de las entidades astrales.
             <br />
