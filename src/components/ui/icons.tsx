@@ -91,6 +91,38 @@ function IconJoystick ({ className, ...props }: React.ComponentProps<'svg'>) {
   )
 }
 
+function FireWorks ({ className, ...props }: React.ComponentProps<'svg'>) {
+  return (
+    <svg className={className} width='215' height='27' viewBox='0 0 215 27' fill='none' xmlns='http://www.w3.org/2000/svg' {...props}>
+      <path d='M197.93 13.3798L1.16972e-06 13.3797M184.54 -0.000237207L184.54 26.7598M194.01 3.91976L175.08 22.8398M175.08 3.91976L194.01 22.8398M214.32 21.4598L214.32 5.28977' stroke='white' strokeMiterlimit='10' />
+    </svg>
+  )
+}
+
+function EntropyArrow ({ className, ...props }: React.ComponentProps<'svg'>) {
+  return (
+    <svg className={className} width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg' {...props}>
+      <path fill='currentColor' d='M22 10.992L13.2276 21.9788H4.39681L10.4132 14.4436H0V7.54043H10.4132L4.39681 0H13.2276L22 10.992Z' />
+    </svg>
+  )
+}
+
+function LinesNewsletter ({ className, ...props }: React.ComponentProps<'svg'>) {
+  return (
+    <svg className={className} width='114' height='19' viewBox='0 0 114 19' fill='none' xmlns='http://www.w3.org/2000/svg' {...props}>
+      <path d='M113.235 0.598999L95.365 18.469M97.465 0.598999L79.595 18.469M81.705 0.598999L63.835 18.469M65.935 0.598999L48.065 18.469M50.165 0.598999L32.305 18.469M34.405 0.598999L16.535 18.469M18.635 0.598999L0.765015 18.469' stroke='white' strokeMiterlimit='10' />
+    </svg>
+  )
+}
+
+function ArrowDownNavigation ({ className, ...props }: React.ComponentProps<'svg'>) {
+  return (
+    <svg className={className} viewBox='0 0 70 71' fill='none' {...props}>
+      <path d='M42.8166 37.6943L35 45.5109M35 45.5109L27.1834 37.6943M35 45.5109V26.3948M69 35.5073C69 54.285 53.7777 69.5073 35 69.5073C16.2223 69.5073 1 54.285 1 35.5073C1 16.7296 16.2223 1.50732 35 1.50732C53.7777 1.50732 69 16.7296 69 35.5073Z' stroke='#F2F2F2' strokeWidth='2' strokeMiterlimit='10' />
+    </svg>
+  )
+}
+
 export {
   IconInstagram,
   IconLinkedIn,
@@ -98,5 +130,9 @@ export {
   IconDiscord,
   IconWindows,
   IconApple,
-  IconJoystick
+  IconJoystick,
+  FireWorks,
+  EntropyArrow,
+  LinesNewsletter,
+  ArrowDownNavigation
 }

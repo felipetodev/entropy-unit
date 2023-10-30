@@ -4,6 +4,7 @@ import Link from 'next/link'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import CarouselCard from './carousel-card'
+import { EntropyArrow } from './ui/icons'
 
 type Props = {
   cards: Array<{
@@ -35,9 +36,7 @@ function BlogCarousel ({ cards }: Props) {
       </div>
       <Link href='/blog' className='ml-auto flex items-center font-transducer font-semibold'>
         IR AL DEV BLOG
-        <svg className='ml-2' width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'>
-          <path id='eu-arrow' d='M13 6.40013L8.0867 12.599H3.14069L6.5104 8.34759H0.678101V4.45268H6.5104L3.14069 0.198242H8.0867L13 6.40013Z' fill='#C70039' />
-        </svg>
+        <EntropyArrow className='ml-5 text-entropy-red w-[13px] h-[13px]' />
       </Link>
     </section>
   )

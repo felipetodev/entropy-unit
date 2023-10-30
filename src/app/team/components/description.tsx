@@ -1,3 +1,5 @@
+import { FireWorks } from '@/components/ui/icons'
+
 function Description () {
   return (
     <>
@@ -14,9 +16,7 @@ function Description () {
                 {' '}TECNOLOGÍA
               </span>
             </h2>
-            <svg width='215' height='27' viewBox='0 0 215 27' fill='none' xmlns='http://www.w3.org/2000/svg'>
-              <path d='M197.93 13.3798L1.16972e-06 13.3797M184.54 -0.000237207L184.54 26.7598M194.01 3.91976L175.08 22.8398M175.08 3.91976L194.01 22.8398M214.32 21.4598L214.32 5.28977' stroke='white' strokeMiterlimit='10' />
-            </svg>
+            <FireWorks />
           </div>
           <div className='flex flex-col justify-center'>
             <p className=''>
