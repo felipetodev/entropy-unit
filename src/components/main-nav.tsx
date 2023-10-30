@@ -3,11 +3,13 @@
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import NavMenu from './nav-menu'
 import { MenuIcon } from './ui/menu'
 import { AnimatePresence } from 'framer-motion'
-import NavMenu from './nav-menu'
+import { devMark } from '@/lib/utils'
 
 function MainNav () {
+  devMark()
   const [isOpen, setIsOpen] = useState(false)
   const path = usePathname()
 
