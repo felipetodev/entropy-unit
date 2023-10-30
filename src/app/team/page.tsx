@@ -89,8 +89,8 @@ function TeamPage () {
                 'sm:border-x': index === 1
               })}
             >
-              <h2>{discipline.title}</h2>
-              <ul className='text-xs text-entropy-slateGray'>
+              <h2 className='text-lg font-semibold'>{discipline.title}</h2>
+              <ul className='font-semibold leading-relaxed text-entropy-slateGray'>
                 {discipline.team.map((member, i) => (
                   <li key={i}>{member}</li>
                 ))}
@@ -105,8 +105,8 @@ function TeamPage () {
                 'sm:border-x': index === 1
               })}
             >
-              <h2>{discipline.title}</h2>
-              <ul className='text-xs text-entropy-slateGray'>
+              <h2 className='text-lg font-semibold'>{discipline.title}</h2>
+              <ul className='font-semibold leading-relaxed text-entropy-slateGray'>
                 {discipline.team.map((member, i) => (
                   <li key={i}>{member}</li>
                 ))}
@@ -121,8 +121,8 @@ function TeamPage () {
                 'sm:border-x': index === 1
               })}
             >
-              <h2>{discipline.title}</h2>
-              <ul className='text-xs text-entropy-slateGray'>
+              <h2 className='text-lg font-semibold'>{discipline.title}</h2>
+              <ul className='font-semibold leading-relaxed text-entropy-slateGray'>
                 {discipline.team.map((member, i) => (
                   <li key={i}>{member}</li>
                 ))}
