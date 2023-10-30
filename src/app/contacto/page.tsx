@@ -10,7 +10,7 @@ function ContactPage () {
           <h1 className='text-3xl sm:text-6xl font-semibold font-transducer text-center'>
             ¿NECESITAS DECIRNOS ALGO?
           </h1>
-          <p className=''>
+          <p className='uppercase'>
             ¿Necesitas materiales de prensa? ¿Tienes una solicitud de medios?
             Para consultas sobre medios, consultas generalES y otros, por favor completa el siguiente formulario.
           </p>
