@@ -1,3 +1,4 @@
+import { Button } from './ui/button'
 
 function CaosSection () {
   return (
@@ -22,9 +23,9 @@ function CaosSection () {
           <p className='[text-wrap:balance]'>
             Entropy Unit es más que solo un estudio de videojuegos. Somos narradores de corazón, comprometidos con contar historias de forma única y cautivadora. Reunido en Chile, nuestro equipo de profesionales dedicados abarca un conglomerado de apasionados por el arte y la ingeniería, cada uno aportando su toque único a nuestras creaciones.
           </p>
-          <button className='md:max-w-fit font-transducer font-normal text-[11px] border rounded-md h-12 px-6'>
+          <Button className='md:max-w-fit'>
             CONOCE EL ESTUDIO
-          </button>
+          </Button>
         </div>
       </div>
     </section>

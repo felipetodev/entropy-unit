@@ -4,8 +4,8 @@ import { IconDiscord, IconInstagram, IconLinkedIn, IconYoutube } from './ui/icon
 function Footer () {
   return (
     <div className='bg-entropy-darkBlue py-8 px-5 sm:px-10'>
-      <footer className='font-transducer max-w-[2000px] mx-auto space-y-10'>
-        <header className='flex flex-col md:flex-row gap-y-10 items-center py-8 border-b'>
+      <footer className='max-w-[2000px] mx-auto space-y-10'>
+        <header className='flex flex-col font-transducer md:flex-row gap-y-10 items-center py-8 border-b-[0.5px] border-entropy-slateGray'>
           <p className='md:mr-6 font-semibold text-xs lg:text-base'>
             MANTENTE AL DÍA
           </p>
@@ -59,7 +59,7 @@ function Footer () {
           <span className='text-[10px] md:text-[12px]'>
             © Copyright 2023, Entropy Unit.
           </span>
-          <a href='#' target='_blank' className='text-[10px] md:text-[12px] text-base'>
+          <a href='#' target='_blank' className='text-[10px] md:text-[12px] text-base hover:underline'>
             Diseño y desarrollo Sebastian Hanson Studio
           </a>
         </div>

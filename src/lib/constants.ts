@@ -10,7 +10,7 @@ export const NAV_LINKS = [
   },
   {
     href: '/team',
-    label: 'ESTUDIO'
+    label: 'TEAM'
   },
   {
     href: '/contacto',
