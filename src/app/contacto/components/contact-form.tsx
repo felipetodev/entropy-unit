@@ -53,7 +53,7 @@ function ContactForm () {
         autoComplete='off'
         className='h-56 uppercase font-transducer bg-transparent outline-none py-4 placeholder:text-entropy-grayUnit placeholder:font-semibold rounded-none border-b border-entropy-slateGray placeholder:focus:text-entropy-red placeholder:transition-all'
       />
-      <span className='text-entropy-red my-5 font-transducer text-sm invisible'>
+      <span className='my-5 text-xs text-center sm:text-start font-transducer text-entropy-red font-semibold invisible'>
         INGRESA UN EMAIL VÁLIDO
       </span>
       <SubmitButton>
