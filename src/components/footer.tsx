@@ -31,24 +31,24 @@ function Footer () {
               </a>
             </li>
           </ul>
-          <ul className='flex md:ml-auto space-x-5 md:space-x-10'>
+          <ul className='flex md:ml-auto space-x-5 md:space-x-10 [&_a]:transition'>
             <li className='text-[10px] md:text-[11px] lg:text-base'>
-              <Link href='/'>
+              <Link href='/' className='hover:text-entropy-red'>
                 HOME
               </Link>
             </li>
             <li className='text-[10px] md:text-[11px] lg:text-base'>
-              <Link href='/games'>
+              <Link href='/games' className='hover:text-entropy-red'>
                 JUEGOS
               </Link>
             </li>
             <li className='text-[10px] md:text-[11px] lg:text-base'>
-              <Link href='/team'>
+              <Link href='/team' className='hover:text-entropy-red'>
                 TEAM
               </Link>
             </li>
             <li className='text-[10px] md:text-[11px] lg:text-base'>
-              <Link href='/contacto'>
+              <Link href='/contacto' className='hover:text-entropy-red'>
                 CONTACTO
               </Link>
             </li>
