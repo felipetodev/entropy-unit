@@ -1,3 +1,4 @@
+import { Button } from './ui/button'
 
 function Hero () {
   return (
@@ -14,9 +15,9 @@ function Hero () {
               ¿TE ATREVES A EMPEZAR?
             </h2>
           </div>
-          <button className='font-transducer font-normal text-[11px] border rounded-md h-12 px-6'>
+          <Button>
             CONOCE MÁS
-          </button>
+          </Button>
         </div>
       </div>
     </section>
