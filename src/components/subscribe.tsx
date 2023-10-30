@@ -1,3 +1,5 @@
+import { Button } from './ui/button'
+
 function Subscribe () {
   return (
     <section className='bg-[#0a0a0a] px-5 sm:px-10'>
@@ -19,9 +21,9 @@ function Subscribe () {
               placeholder='TU EMAIL'
               className='rounded-none uppercase font-transducer w-full bg-transparent outline-none py-4 placeholder:text-entropy-slateGray placeholder:font-semibold'
             />
-            <button className='mx-auto w-max text-xs sm:text-base rounded-md sm:rounded-none font-transducer h-11 sm:h-16 px-4 bg-entropy-neutral text-entropy-black text font-semibold transition hover:bg-white/60'>
+            <Button variant='secondary' className='mx-auto w-max text-xs sm:text-base rounded-md sm:rounded-none h-11 sm:h-16 px-4'>
               SUSCRIBETE
-            </button>
+            </Button>
           </div>
         </form>
         <p className='text-xs text-center sm:text-start font-transducer text-entropy-red font-semibold'>
