@@ -1,3 +1,4 @@
+import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 
 function GamesHero () {
@@ -6,7 +7,7 @@ function GamesHero () {
       <img className='block w-full h-full object-cover object-top' src='/hero.webp' alt='games-hero' />
       <div className='flex flex-col sm:flex-row absolute justify-between left-0 bottom-0 w-full px-14 pb-16'>
         <div className='grid gap-y-6'>
-          <img className='block aspect-[48/25]' src='/logo.svg' alt='The Vow of Nazka' />
+          <img className='block' src='/tvon-horizontal.svg' alt='The Vow of Nazka' />
           <div className='space-y-3'>
             <div className='flex flex-col space-y-3 font-transducer text-xl sm:text-3xl lg:text-6xl font-semibold'>
               <h1>
@@ -37,9 +38,9 @@ function GamesHero () {
               </div>
             </div>
           </div>
-          <button className='w-full sm:w-max font-transducer font-semibold text-[11px] border rounded-md h-12 px-6'>
+          <Button className='w-full sm:w-max'>
             DESCARGA LA DEMO AHORA
-          </button>
+          </Button>
         </div>
         <Link href='/games#the-journey' className='flex items-center justify-center sm:justify-normal gap-x-5 sm:self-end mt-[30px] sm:mt-auto'>
           <p>Descubre más</p>

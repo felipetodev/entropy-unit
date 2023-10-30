@@ -1,5 +1,6 @@
 'use client'
 
+import { Button } from '@/components/ui/button'
 import useNumberAnimation from '@/hooks/use-number-animation'
 import { motion } from 'framer-motion'
 
@@ -32,9 +33,9 @@ function Release () {
             </p>
           </div>
         </div>
-        <button className='w-full sm:w-max font-transducer font-semibold text-[11px] border rounded-md h-12 px-6'>
+        <Button className='w-full sm:w-max'>
           DESCARGA LA DEMO AHORA
-        </button>
+        </Button>
       </div>
     </section>
   )
