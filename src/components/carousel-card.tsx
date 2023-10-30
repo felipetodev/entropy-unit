@@ -1,6 +1,6 @@
+import { useState } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import useBackgroundGradient from '@/hooks/use-bg-gradient'
 
 type Card = {
   id: string
@@ -10,19 +10,29 @@ type Card = {
 }
 
 function CarouselCard ({ card }: { card: Card }) {
-  const { backgroundGradient, handleMouseMove } = useBackgroundGradient()
+  // find a better way to handle this
+  const [parentHover, setParentHover] = useState(false)
   return (
     <Link
-      onMouseMove={handleMouseMove}
       href={`/blog/${card.id}`}
-      className='embla__slide group'
+      className='embla__slide'
+      onMouseOver={() => setParentHover(true)}
+      onMouseLeave={() => setParentHover(false)}
     >
-      <article className='relative grid gap-y-3 p-1 overflow-hidden rounded-[20px]'>
-        <figure className='overflow-hidden z-10 border border-transparent group-hover:border-entropy-red/20'>
-          <video playsInline loop className='block h-full w-full object-cover' src='/video1.mp4' autoPlay muted />
+      <article className='grid gap-y-3 p-1'>
+        <figure className='flex items-end overflow-hidden z-10 h-[362px] lg:h-[450px]'>
+          <motion.video
+            loop
+            muted
+            autoPlay
+            playsInline
+            animate={{ height: parentHover ? '100%' : '' }}
+            className='block h-[262px] lg:h-[350px] w-full object-cover rounded-[20px]'
+            src='/video1.mp4'
+          />
         </figure>
         <span className='z-10 font-transducer uppercase text-xs text-entropy-slateGray font-semibold'>
-          {new Date(card.date).toLocaleDateString('en-US', { day: 'numeric', month: 'short' })}
+          {new Date(card.date).toLocaleDateString('es-ES', { day: 'numeric', month: 'short' })}
         </span>
         <h3 className='z-10 font-transducer text-entropy-grayUnit font-semibold'>
           {card.title}
@@ -30,11 +40,6 @@ function CarouselCard ({ card }: { card: Card }) {
         <p className='z-10'>
           {card.description}
         </p>
-
-        <motion.div
-          className='pointer-events-none absolute -inset-px opacity-0 group-hover:opacity-100 transition-opacity duration-300'
-          style={{ background: backgroundGradient }}
-        />
       </article>
     </Link>
   )
