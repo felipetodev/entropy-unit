@@ -6,7 +6,7 @@ function GamesHero () {
   return (
     <section className='h-screen relative'>
       <img className='block w-full h-full object-cover object-top' src='/hero.webp' alt='games-hero' />
-      <div className='flex flex-col sm:flex-row absolute justify-between left-0 bottom-0 w-full px-14 pb-16'>
+      <div className='flex flex-col sm:flex-row absolute justify-between left-0 bottom-0 w-full pb-16 px-5 sm:px-10'>
         <div className='grid gap-y-6'>
           <img className='block' src='/tvon-horizontal.svg' alt='The Vow of Nazka' />
           <div className='space-y-3'>
