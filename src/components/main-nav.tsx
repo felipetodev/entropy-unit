@@ -41,7 +41,7 @@ function MainNav () {
             href='/'
             onClick={handleClick}
           >
-            <img className='block h-14' src='navbar-logo.svg' alt='Entropy Unit' />
+            <img className='block h-12 sm:h-14' src='navbar-logo.svg' alt='Entropy Unit' />
           </Link>
           <div className='ml-auto flex items-center'>
             <div className='flex items-center border-l border-entropy-slateGray h-full sm:pr-6'>
