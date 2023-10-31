@@ -21,7 +21,7 @@ function Subscribe () {
               className='rounded-none uppercase font-transducer w-full bg-transparent outline-none py-4 placeholder:text-entropy-slateGray placeholder:font-semibold'
             />
             <Button variant='secondary' className='mx-auto w-max text-xs sm:text-base rounded-md sm:rounded-none h-11 sm:h-16 px-4'>
-              SUSCRIBETE
+              SUSCRÍBETE
             </Button>
           </div>
         </form>

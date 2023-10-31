@@ -9,7 +9,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: 'text-primary-foreground border hover:bg-entropy-red hover:border-entropy-red',
-        secondary: 'bg-entropy-grayUnit text-entropy-black'
+        secondary: 'bg-entropy-grayUnit text-entropy-black hover:text-entropy-grayUnit'
       },
       size: {
         default: 'h-10 px-4 py-2 rounded-md h-12 px-8 hover:bg-entropy-red'
