@@ -6,11 +6,11 @@ function GamesHero () {
   return (
     <section className='h-screen relative'>
       <img className='block w-full h-full object-cover object-top' src='/hero.webp' alt='games-hero' />
-      <div className='flex flex-col sm:flex-row absolute justify-between left-0 bottom-0 w-full pb-16 px-5 sm:px-10'>
+      <div className='z-30 flex flex-col sm:flex-row absolute justify-between left-0 bottom-0 w-full pb-16 px-5 sm:px-10'>
         <div className='grid gap-y-6'>
-          <img className='block' src='/tvon-horizontal.svg' alt='The Vow of Nazka' />
+          <img className='block w-[165px] sm:w-fit' src='/tvon-horizontal.svg' alt='The Vow of Nazka' />
           <div className='space-y-3'>
-            <div className='flex flex-col space-y-3 font-transducer text-xl sm:text-3xl lg:text-6xl font-semibold'>
+            <div className='flex space-y-1.5 sm:space-y-3 flex-col font-transducer text-3xl sm:text-3xl lg:text-6xl font-semibold'>
               <h1>
                 UN VIAJE
               </h1>
@@ -44,6 +44,7 @@ function GamesHero () {
           </button>
         </Link>
       </div>
+      <div className='absolute inset-0 bg-gradient-to-b from-transparent from-0% to-100% to-entropy-black z-20' />
     </section>
   )
 }
