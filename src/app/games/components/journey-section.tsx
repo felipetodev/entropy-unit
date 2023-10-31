@@ -16,7 +16,7 @@ function JourneySection () {
             El juego combina combate cuerpo a cuerpo, habilidades de caza y la invocación de dioses para desbloquear poderes especiales.
           </p>
         </div>
-        <Frame className='absolute -right-8 -top-32 sm:-top-36 md:-top-20 lg:-top-16 w-full' />
+        <Frame className='min-w-[390px] absolute -right-8 -top-32 sm:-top-36 md:-top-20 lg:-top-16 w-full' />
       </div>
     </section>
   )
