@@ -1,10 +1,11 @@
 'use client'
 
-import Link from 'next/link'
+import NextLink from 'next/link'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import CarouselCard from './carousel-card'
 import { EntropyArrow } from './ui/icons'
+import { motion } from 'framer-motion'
 
 type Props = {
   cards: Array<{
@@ -14,6 +15,8 @@ type Props = {
     description: string
   }>
 }
+
+const Link = motion(NextLink)
 
 function BlogCarousel ({ cards }: Props) {
   const [emblaRef] = useEmblaCarousel({
@@ -34,9 +37,14 @@ function BlogCarousel ({ cards }: Props) {
           ))}
         </div>
       </div>
-      <Link href='/blog' className='ml-auto flex items-center font-transducer font-semibold px-5 sm:px-10'>
-        IR AL DEV BLOG
-        <EntropyArrow className='ml-5 text-entropy-red w-[13px] h-[13px]' />
+      <Link
+        href='/blog'
+        whileHover={{ gap: '10px' }}
+        transition={{ type: 'spring', bounce: false }}
+        className='gap-x-5 ml-auto flex items-center font-transducer font-semibold px-5 sm:px-10'
+      >
+        <span>IR AL DEV BLOG</span>
+        <EntropyArrow className='text-entropy-red w-[13px] h-[13px]' />
       </Link>
     </section>
   )
