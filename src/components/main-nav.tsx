@@ -28,15 +28,15 @@ function MainNav () {
 
   return (
     <>
-      <div className='fixed top-0 left-0 w-full h-20 z-50 mt-5 px-5 sm:px-10'>
+      <div className='fixed top-0 left-0 w-full h-16 sm:h-20 z-50 mt-5 px-5 sm:px-10'>
         <main className='flex h-full border-b border-entropy-slateGray'>
           <Link href='/'>
             <img className='block h-14' src='navbar-logo.svg' alt='Entropy Unit' />
           </Link>
           <div className='ml-auto flex items-center'>
-            <div className='flex items-center border-l border-entropy-slateGray h-full pr-6'>
+            <div className='flex items-center border-l border-entropy-slateGray h-full sm:pr-6'>
               <button
-                className='ml-6 z-50'
+                className='ml-4 sm:ml-6 z-50'
                 onClick={() => setIsOpen(!isOpen)}
                 onKeyDown={handleKeyboardClose}
               >
