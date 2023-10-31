@@ -27,8 +27,8 @@ function MainNav () {
   }
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault()
     if (e.currentTarget.pathname === path && isOpen) {
+      e.preventDefault()
       setIsOpen(false)
     }
   }
