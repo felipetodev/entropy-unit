@@ -1,4 +1,6 @@
-import { Button } from './ui/button'
+import Link from 'next/link'
+import { cn } from '@/lib/utils'
+import { buttonVariants } from './ui/button'
 
 function Hero () {
   return (
@@ -15,9 +17,9 @@ function Hero () {
               ¿TE ATREVES A EMPEZAR?
             </h2>
           </div>
-          <Button>
+          <Link href='/games' className={cn(buttonVariants())}>
             CONOCE MÁS
-          </Button>
+          </Link>
         </div>
       </div>
     </section>
