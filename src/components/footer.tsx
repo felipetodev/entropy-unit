@@ -11,44 +11,44 @@ function Footer () {
           </p>
           <ul className='flex space-x-10 sm:space-x-8 items-center [&_a]:transition'>
             <li>
-              <a className='hover:text-entropy-red' href='https://www.instagram.com/thevowofnazka' target='_blank' rel='noreferrer'>
+              <a className='hover:text-entropy-red focus-visible:text-entropy-red' href='https://www.instagram.com/thevowofnazka' target='_blank' rel='noreferrer' aria-label='instagram'>
                 <IconInstagram className='h-7 w-7 sm:w-5 sm:h-5 lg:w-7 lg:h-7' />
               </a>
             </li>
             <li>
-              <a className='hover:text-entropy-red' href='#' target='_blank'>
+              <a className='hover:text-entropy-red focus-visible:text-entropy-red' href='#' target='_blank' aria-label='discord'>
                 <IconDiscord className='h-7 w-7 sm:w-5 sm:h-5 lg:w-7 lg:h-7' />
               </a>
             </li>
             <li>
-              <a className='hover:text-entropy-red' href='https://www.linkedin.com/company/entropy-unit' target='_blank' rel='noreferrer'>
+              <a className='hover:text-entropy-red focus-visible:text-entropy-red' href='https://www.linkedin.com/company/entropy-unit' target='_blank' rel='noreferrer' aria-label='linkedin'>
                 <IconLinkedIn className='h-7 w-7 sm:w-5 sm:h-5 lg:w-7 lg:h-7' />
               </a>
             </li>
             <li>
-              <a className='hover:text-entropy-red' href='#' target='_blank'>
+              <a className='hover:text-entropy-red focus-visible:text-entropy-red' href='#' target='_blank' aria-label='youtube'>
                 <IconYoutube className='h-7 w-7 sm:w-5 sm:h-5 lg:w-7 lg:h-7' />
               </a>
             </li>
           </ul>
           <ul className='flex md:ml-auto space-x-5 md:space-x-10 [&_a]:transition'>
             <li className='text-[10px] md:text-[11px] lg:text-base'>
-              <Link href='/' className='hover:text-entropy-red'>
+              <Link href='/' className='hover:text-entropy-red focus-visible:text-entropy-red'>
                 HOME
               </Link>
             </li>
             <li className='text-[10px] md:text-[11px] lg:text-base'>
-              <Link href='/games' className='hover:text-entropy-red'>
+              <Link href='/games' className='hover:text-entropy-red focus-visible:text-entropy-red'>
                 JUEGOS
               </Link>
             </li>
             <li className='text-[10px] md:text-[11px] lg:text-base'>
-              <Link href='/team' className='hover:text-entropy-red'>
+              <Link href='/team' className='hover:text-entropy-red focus-visible:text-entropy-red'>
                 TEAM
               </Link>
             </li>
             <li className='text-[10px] md:text-[11px] lg:text-base'>
-              <Link href='/contacto' className='hover:text-entropy-red'>
+              <Link href='/contacto' className='hover:text-entropy-red focus-visible:text-entropy-red'>
                 CONTACTO
               </Link>
             </li>
@@ -59,7 +59,7 @@ function Footer () {
           <span className='text-[10px] md:text-[12px]'>
             © Copyright 2023, Entropy Unit.
           </span>
-          <a href='#' target='_blank' className='text-[10px] md:text-[12px] text-base hover:underline'>
+          <a href='#' target='_blank' className='text-[10px] md:text-[12px] text-base hover:underline focus-visible:underline'>
             Diseño y desarrollo Sebastian Hanson Studio
           </a>
         </div>
