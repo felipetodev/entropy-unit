@@ -12,7 +12,7 @@ function Subscribe () {
           ÚNETE A NUESTRO BOLETÍN SEMANAL Y MANTENTE INFORMADO SOBRE EL DESARROLLO DE THE VOW OF NAZKA.
         </h2>
         <form action='' className='flex flex-col'>
-          <div className='flex flex-col sm:flex-row w-full sm:border-y sm:rounded-r-md overflow-hidden [&_input]:border-y sm:[&_input]:border-none gap-y-6 sm:gap-y-0'>
+          <div className='flex flex-col sm:flex-row w-full sm:border-y sm:border-r sm:rounded-r-md overflow-hidden [&_input]:border-y sm:[&_input]:border-none gap-y-6 sm:gap-y-0'>
             <input
               required
               name='id'
