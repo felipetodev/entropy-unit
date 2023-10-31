@@ -12,7 +12,7 @@ const buttonVariants = cva(
         secondary: 'bg-entropy-grayUnit text-entropy-black'
       },
       size: {
-        default: 'h-10 px-4 py-2 rounded-md h-12 px-8'
+        default: 'h-10 px-4 py-2 rounded-md h-12 px-8 hover:bg-entropy-red'
       }
     },
     defaultVariants: {
