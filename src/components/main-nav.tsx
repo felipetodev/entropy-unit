@@ -26,11 +26,21 @@ function MainNav () {
     }
   }
 
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault()
+    if (e.currentTarget.pathname === path && isOpen) {
+      setIsOpen(false)
+    }
+  }
+
   return (
     <>
       <div className='fixed top-0 left-0 w-full h-16 sm:h-20 z-50 mt-5 px-5 sm:px-10'>
         <main className='flex h-full border-b border-entropy-slateGray'>
-          <Link href='/'>
+          <Link
+            href='/'
+            onClick={handleClick}
+          >
             <img className='block h-14' src='navbar-logo.svg' alt='Entropy Unit' />
           </Link>
           <div className='ml-auto flex items-center'>
@@ -49,7 +59,7 @@ function MainNav () {
       </div>
       <AnimatePresence>
         {isOpen && (
-          <NavMenu />
+          <NavMenu onClick={handleClick} />
         )}
       </AnimatePresence>
     </>

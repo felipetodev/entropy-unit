@@ -4,7 +4,11 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { NAV_LINKS } from '@/lib/constants'
 
-function NavMenu () {
+type Props = {
+  onClick: (e: React.MouseEvent<HTMLAnchorElement>) => void
+}
+
+function NavMenu ({ onClick }: Props) {
   return (
     <motion.div
       initial={{ opacity: 0, y: -500 }}
@@ -17,7 +21,11 @@ function NavMenu () {
         <ul className='[&_li]:border-b [&_li]:border-entropy-slateGray [font-size:clamp(2.2em,6vw,100px)] font-semibold'>
           {NAV_LINKS.map((link, i) => (
             <li key={i}>
-              <Link href={link.href} className='hover:text-entropy-red transition focus-visible:outline-none focus-visible:text-entropy-red'>
+              <Link
+                href={link.href}
+                onClick={onClick}
+                className='hover:text-entropy-red transition focus-visible:outline-none focus-visible:text-entropy-red'
+              >
                 <motion.span
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
