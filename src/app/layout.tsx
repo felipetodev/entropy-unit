@@ -31,7 +31,7 @@ export default function RootLayout ({
         baiJamjuree.className
       )}
       >
-        <div className='flex-1 relative'>
+        <div className='flex-1 relative overflow-x-hidden'>
           <MainNav />
           {children}
           <Footer />
