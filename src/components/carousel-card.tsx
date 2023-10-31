@@ -20,16 +20,17 @@ function CarouselCard ({ card }: { card: Card }) {
       onMouseLeave={() => setParentHover(false)}
     >
       <article className='grid gap-y-3 p-1'>
-        <figure className='flex items-end overflow-hidden z-10 h-[362px] lg:h-[450px]'>
+        <figure className='relative flex items-end overflow-hidden z-10 h-[342px] lg:h-[430px]'>
           <motion.video
             loop
             muted
             autoPlay
             playsInline
             animate={{ height: parentHover ? '100%' : '' }}
-            className='block h-[262px] lg:h-[350px] w-full object-cover rounded-[20px]'
+            className='block h-[262px] lg:h-[350px] w-full object-cover rounded-[20px] z-10'
             src='/video1.mp4'
           />
+          <div className='absolute w-full h-[262px] lg:h-[350px] rounded-[20px] bg-entropy-red/10' />
         </figure>
         <span className='z-10 font-transducer uppercase text-xs text-entropy-slateGray font-semibold'>
           {new Date(card.date).toLocaleDateString('es-ES', { day: 'numeric', month: 'short' })}
