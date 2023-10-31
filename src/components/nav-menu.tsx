@@ -17,7 +17,7 @@ function NavMenu () {
         <ul className='[&_li]:border-b [&_li]:border-entropy-slateGray [font-size:clamp(2.2em,6vw,100px)] font-semibold'>
           {NAV_LINKS.map((link, i) => (
             <li key={i}>
-              <Link href={link.href} className='hover:text-entropy-red transition'>
+              <Link href={link.href} className='hover:text-entropy-red transition focus-visible:outline-none focus-visible:text-entropy-red'>
                 <motion.span
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
