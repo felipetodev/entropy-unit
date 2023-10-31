@@ -40,6 +40,7 @@ function GamesHero () {
           <p>Descubre más</p>
           <button>
             <ArrowDownNavigation className='h-8 w-8 sm:w-20 sm:h-20' />
+            <span className='sr-only'>Scroll Down</span>
           </button>
         </Link>
       </div>
