@@ -36,7 +36,7 @@ function GamesHero () {
             DESCARGA LA DEMO AHORA
           </Button>
         </div>
-        <Link href='/games#the-journey' className='flex items-center justify-center sm:justify-normal gap-x-5 sm:self-end mt-[30px] sm:mt-auto'>
+        <Link href='/games#the-journey' className='sm:-mb-4 flex items-center justify-center sm:justify-normal gap-x-5 sm:self-end mt-[30px] sm:mt-auto'>
           <p>Descubre más</p>
           <button>
             <ArrowDownNavigation className='h-8 w-8 sm:w-20 sm:h-20' />
