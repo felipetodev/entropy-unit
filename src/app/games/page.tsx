@@ -4,6 +4,10 @@ import WorldVon from './components/world-von'
 import TheHero from './components/the-hero'
 import Release from './components/release-section'
 
+export const metadata = {
+  title: 'Entropy Unit | Games'
+}
+
 function GamesPage () {
   return (
     <main>

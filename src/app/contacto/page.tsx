@@ -2,6 +2,10 @@ import ContactMarquee from './components/contact-marquee'
 import ContactForm from './components/contact-form'
 import Subscribe from '@/components/subscribe'
 
+export const metadata = {
+  title: 'Entropy Unit | Contact'
+}
+
 function ContactPage () {
   return (
     <main>
