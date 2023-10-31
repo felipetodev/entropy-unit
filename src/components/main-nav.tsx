@@ -9,9 +9,12 @@ import { AnimatePresence } from 'framer-motion'
 import { devMark } from '@/lib/utils'
 
 function MainNav () {
-  devMark()
   const [isOpen, setIsOpen] = useState(false)
   const path = usePathname()
+
+  useEffect(() => {
+    devMark()
+  }, [])
 
   useEffect(() => {
     setIsOpen(false)
@@ -38,6 +41,7 @@ function MainNav () {
                 onKeyDown={handleKeyboardClose}
               >
                 <MenuIcon isOpen={isOpen} />
+                <span className='sr-only'>Toggle Sidebar</span>
               </button>
             </div>
           </div>
