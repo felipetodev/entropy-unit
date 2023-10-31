@@ -13,11 +13,7 @@ export function SubmitButton ({ className, children, ...props }: any) {
       type='submit'
       disabled={pending}
       aria-disabled={pending}
-      className={cn('w-max',
-        className,
-        {
-          'bg-entropy-red border-entropy-red': pending
-        })}
+      className={cn('w-max', className)}
       {...props}
     >
       {pending ? <Spinner className='w-7 h-7 animate-spin' /> : children}
