@@ -55,12 +55,12 @@ function Footer () {
           </ul>
         </header>
         <img className='block w-full' src='/entropy-unit-big-text.svg' alt='Entropy Unit' />
-        <div className='flex flex-col md:flex-row justify-between text-entropy-slateGray text-xs'>
+        <div className='group flex flex-col md:flex-row justify-between text-entropy-slateGray text-xs'>
           <span className='text-[10px] md:text-[12px]'>
             © Copyright 2023, Entropy Unit.
           </span>
-          <a href='https://www.sebastianhansonstudio.com' target='_blank' className='text-[10px] md:text-[12px] hover:underline focus-visible:underline' rel='noreferrer'>
-            Diseño y desarrollo Sebastian Hanson Studio
+          <a href='https://www.sebastianhansonstudio.com' target='_blank' className='text-[10px] md:text-[12px] focus-visible:underline' rel='noreferrer'>
+            Diseño y desarrollo{' '}<span className='group-hover:underline'>Sebastian Hanson Studio</span>
           </a>
         </div>
       </footer>
