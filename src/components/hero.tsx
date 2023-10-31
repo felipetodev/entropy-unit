@@ -4,7 +4,7 @@ import { buttonVariants } from './ui/button'
 
 function Hero () {
   return (
-    <section className='h-[675px]'>
+    <section className='h-[800px]'>
       <div className='relative h-full w-full'>
         <video
           loop

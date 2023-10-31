@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 function GamesHero () {
   return (
-    <section className='h-screen relative'>
+    <section className='relative h-[800px]'>
       <img className='block w-full h-full object-cover object-top' src='/hero.webp' alt='games-hero' />
       <div className='z-30 flex flex-col sm:flex-row absolute justify-between left-0 bottom-0 w-full pb-16 px-5 sm:px-10'>
         <div className='grid gap-y-6'>
