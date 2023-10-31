@@ -59,7 +59,7 @@ function Footer () {
           <span className='text-[10px] md:text-[12px]'>
             © Copyright 2023, Entropy Unit.
           </span>
-          <a href='#' target='_blank' className='text-[10px] md:text-[12px] text-base hover:underline focus-visible:underline'>
+          <a href='https://www.sebastianhansonstudio.com' target='_blank' className='text-[10px] md:text-[12px] hover:underline focus-visible:underline' rel='noreferrer'>
             Diseño y desarrollo Sebastian Hanson Studio
           </a>
         </div>
