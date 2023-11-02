@@ -54,7 +54,7 @@ function Footer () {
             </li>
           </ul>
         </header>
-        <img className='block w-full' src='/entropy-unit-big-text.svg' alt='Entropy Unit' />
+        <img loading='lazy' className='block w-full' src='/entropy-unit-big-text.svg' alt='Entropy Unit' />
         <div className='group flex flex-col md:flex-row justify-between text-entropy-slateGray text-xs'>
           <span className='text-[10px] md:text-[12px]'>
             © Copyright 2023, Entropy Unit.
