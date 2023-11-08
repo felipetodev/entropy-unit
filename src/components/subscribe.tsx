@@ -39,7 +39,7 @@ function Subscribe () {
             </SubmitButton>
           </div>
         </form>
-        <p className='text-xs text-center sm:text-start font-transducer text-entropy-red font-semibold'>
+        <p className='invisible text-xs text-center sm:text-start font-transducer text-entropy-red font-semibold'>
           INGRESA UN EMAIL VÁLIDO
         </p>
       </div>
