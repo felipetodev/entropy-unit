@@ -8,7 +8,7 @@ function CaosSection () {
       <div className='grid grid-cols-1 md:grid-cols-2 md:gap-12 w-full h-full max-w-[2000px] mx-auto'>
         <div className='relative w-full flex justify-center h-[320px] md:h-full'>
           <img
-            className='absolute object-contain block z-10 -mt-28 h-[500px] md:h-auto'
+            className='z-20 absolute object-contain block z-10 -mt-28 h-[500px] md:h-auto'
             src='/pj.png'
             alt='entropy pj'
           />

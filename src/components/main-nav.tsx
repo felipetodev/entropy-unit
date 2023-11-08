@@ -36,7 +36,7 @@ function MainNav () {
   return (
     <>
       <div className='fixed top-0 left-0 w-full h-16 sm:h-20 z-50 mt-5 px-5 sm:px-10'>
-        <main className='flex h-full border-b border-entropy-slateGray'>
+        <main className='relative z-30 flex h-full border-b border-entropy-slateGray'>
           <Link
             href='/'
             onClick={handleClick}
@@ -56,6 +56,7 @@ function MainNav () {
             </div>
           </div>
         </main>
+        <div className='absolute z-20 h-[calc(64px+20px)] sm:h-[calc(80px+20px)] w-full left-0 -top-[20px] bg-gradient-to-t from-entropy-black/10 from-10% to-100% to-entropy-black/60' />
       </div>
       <AnimatePresence>
         {isOpen && (
