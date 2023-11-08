@@ -11,7 +11,7 @@ function Subscribe () {
         <span className='flex justify-center'>
           <LinesNewsletter />
         </span>
-        <h2 className='[text-wrap:balance] text-center font-transducer text-lg sm:text-2xl font-semibold'>
+        <h2 className='[text-wrap:balance] text-center font-transducer text-base sm:text-lg lg:text-2xl font-semibold'>
           ÚNETE A NUESTRO BOLETÍN SEMANAL Y MANTENTE INFORMADO SOBRE EL DESARROLLO DE THE VOW OF NAZKA.
         </h2>
         <form
