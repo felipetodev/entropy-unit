@@ -32,7 +32,7 @@ function Subscribe () {
               name='email'
               type='email'
               placeholder='TU EMAIL'
-              className='rounded-none uppercase font-transducer w-full bg-transparent outline-none py-4 placeholder:text-entropy-slateGray placeholder:font-semibold'
+              className='rounded-none uppercase font-transducer w-full bg-transparent outline-none py-4 placeholder:transition-colors focus:placeholder:text-entropy-slateGray/70 placeholder:text-entropy-slateGray placeholder:font-semibold'
             />
             <SubmitButton variant='secondary' className='mx-auto w-max text-xs sm:text-base rounded-md sm:rounded-none h-11 sm:h-16 px-4'>
               SUSCRÍBETE
