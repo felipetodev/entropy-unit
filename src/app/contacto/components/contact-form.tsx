@@ -6,7 +6,7 @@ const sleep = async (ms: number) => await new Promise(resolve => setTimeout(reso
 function ContactForm () {
   return (
     <form
-      className='flex flex-col w-full my-[100px]'
+      className='flex flex-col w-full mt-[100px] mb-10'
       action={async (formData: FormData) => {
         'use server'
         await sleep(3000)
