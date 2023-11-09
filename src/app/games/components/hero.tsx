@@ -32,7 +32,7 @@ function GamesHero () {
               </div>
             </div>
           </div>
-          <Button className='w-full sm:w-max'>
+          <Button className='w-fit mx-auto sm:mx-0'>
             DESCARGA LA DEMO AHORA
           </Button>
         </div>

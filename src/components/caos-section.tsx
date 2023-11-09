@@ -25,7 +25,7 @@ function CaosSection () {
           <p className='[text-wrap:balance]'>
             Entropy Unit es más que solo un estudio de videojuegos. Somos narradores de corazón, comprometidos con contar historias de forma única y cautivadora. Reunido en Chile, nuestro equipo de profesionales dedicados abarca un conglomerado de apasionados por el arte y la ingeniería, cada uno aportando su toque único a nuestras creaciones.
           </p>
-          <Link href='/team' className={cn(buttonVariants(), 'md:max-w-fit')}>
+          <Link href='/team' className={cn(buttonVariants(), 'w-fit mx-auto sm:mx-0')}>
             CONOCE EL ESTUDIO
           </Link>
         </div>
