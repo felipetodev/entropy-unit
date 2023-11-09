@@ -56,7 +56,7 @@ function MainNav () {
             </div>
           </div>
         </main>
-        <div className='absolute z-20 h-[calc(64px+20px)] sm:h-[calc(80px+20px)] w-full left-0 -top-[20px] bg-gradient-to-t from-entropy-black/10 from-10% to-100% to-entropy-black/60' />
+        <div className='absolute z-20 h-[calc(64px+20px)] sm:h-[calc(80px+20px)] w-full left-0 -top-[20px] bg-gradient-to-t from-entropy-black/10 from-10% to-100% to-entropy-black/30' />
       </div>
       <AnimatePresence>
         {isOpen && (
