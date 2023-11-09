@@ -16,7 +16,7 @@ function Footer () {
               </a>
             </li>
             <li>
-              <a className='hover:text-entropy-red focus-visible:text-entropy-red' href='#' target='_blank' aria-label='discord'>
+              <a className='hover:text-entropy-red focus-visible:text-entropy-red' href='https://discord.com/invite/nkfU4xeRht' target='_blank' aria-label='discord' rel='noreferrer'>
                 <IconDiscord className='h-7 w-7 sm:w-5 sm:h-5 lg:w-7 lg:h-7' />
               </a>
             </li>
