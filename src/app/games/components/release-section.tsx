@@ -10,7 +10,7 @@ function Release () {
 
   return (
     <section className='bg-gradient-to-b from-[#121212] from-20% to-100% to-entropy-red'>
-      <div className='cursor-crosshair sm:-mt-[200px] sm:pt-[600px] pb-[150px] flex flex-col items-center justify-center font-transducer h-full px-5'>
+      <div className='cursor-crosshair md:-mt-[200px] md:pt-[600px] pb-[150px] flex flex-col items-center justify-center font-transducer h-full px-5'>
         <h2 ref={ref} className='text-entropy-slateGray text-xl sm:text-4xl font-semibold'>
           LANZAMIENTO
         </h2>

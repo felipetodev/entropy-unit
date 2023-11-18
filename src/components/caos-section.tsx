@@ -1,6 +1,7 @@
 import Link from 'next/link'
-import { cn } from '@/lib/utils'
 import { buttonVariants } from './ui/button'
+import { MotionDiv } from './ui/motion-div'
+import { cn } from '@/lib/utils'
 
 function CaosSection () {
   return (
@@ -18,7 +19,7 @@ function CaosSection () {
             </span>
           </div>
         </div>
-        <div className='flex flex-col justify-center gap-y-10'>
+        <MotionDiv className='flex flex-col justify-center gap-y-10'>
           <h2 className='font-transducer text-xl sm:text-3xl lg:text-4xl font-semibold [text-wrap:balance]'>
             DEL CAOS A LA EVOLUCIÓN
           </h2>
@@ -28,7 +29,7 @@ function CaosSection () {
           <Link href='/team' className={cn(buttonVariants(), 'w-fit mx-auto sm:mx-0')}>
             CONOCE EL ESTUDIO
           </Link>
-        </div>
+        </MotionDiv>
       </div>
     </section>
   )

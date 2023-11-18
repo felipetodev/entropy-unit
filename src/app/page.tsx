@@ -39,11 +39,11 @@ const Cards = [
 
 export default function Home () {
   return (
-    <main>
+    <>
       <Hero />
       <CaosSection />
       <Carousel cards={Cards} />
       <Subscribe />
-    </main>
+    </>
   )
 }

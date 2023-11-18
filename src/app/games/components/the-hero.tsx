@@ -1,10 +1,11 @@
 import { Frame2 } from '@/components/ui/frames'
+import Video from '@/components/ui/video'
 
 function TheHero () {
   return (
-    <section className='py-28 px-5 md:px-20 mt-36'>
-      <div className='relative grid grid-cols-1 md:grid-cols-2 gap-[40px] lg:gap-[100px] w-full h-full max-w-[2000px] mx-auto'>
-        <div className='order-last sm:order-none flex flex-col justify-center gap-y-10 z-10'>
+    <section className='relative py-28 mt-36'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-[40px] lg:gap-[100px] px-5 md:px-20 w-full h-full max-w-[2000px] mx-auto'>
+        <div className='order-last md:order-none flex flex-col justify-center gap-y-10 z-10'>
           <h2 className='font-semibold text-4xl font-transducer'>
             EL HÉROE
           </h2>
@@ -16,10 +17,10 @@ function TheHero () {
           </p>
         </div>
         <div className='bg-neutral-500 h-[500px] rounded-3xl overflow-hidden'>
-          <video playsInline loop className='block object-none h-full w-full object-[50%,50%]' src='/ride.mp4' muted autoPlay />
+          <Video src='/ride.mp4' className='object-none object-[50%,50%]' />
         </div>
-        <Frame2 className='absolute w-full -left-20 sm:left-0 -top-40 sm:ml-20' />
       </div>
+      <Frame2 className='absolute top-0 !-left-8 sm:-left-1 w-fit md:left-0 mt-32 md:mt-auto h-[600px] md:h-[calc(100%+50px)] md:w-full md:ml-20' />
     </section>
   )
 }

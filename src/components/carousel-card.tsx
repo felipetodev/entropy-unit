@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Link from 'next/link'
+import NextLink from 'next/link'
 import { motion } from 'framer-motion'
 
 type Card = {
@@ -9,11 +9,29 @@ type Card = {
   description: string
 }
 
-function CarouselCard ({ card }: { card: Card }) {
+const Link = motion(NextLink)
+
+const variants = {
+  initial: (i: number) => ({
+    opacity: 0 * i,
+    y: 10 * i
+  }),
+  open: {
+    opacity: 1,
+    y: 0
+  }
+}
+
+function CarouselCard ({ card, index, isInView }: { card: Card, index: number, isInView: boolean }) {
   // find a better way to handle this
   const [parentHover, setParentHover] = useState(false)
   return (
     <Link
+      variants={variants}
+      initial='initial'
+      animate={isInView ? 'open' : 'closed'}
+      custom={index}
+      transition={{ duration: 0.5, delay: 0.1 * index }}
       href={`/blog/${card.id}`}
       className='embla__slide'
       onMouseOver={() => setParentHover(true)}

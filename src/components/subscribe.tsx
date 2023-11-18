@@ -1,19 +1,21 @@
 import { SubmitButton } from '@/app/actions/submit-button'
 import { LinesNewsletter } from './ui/icons'
+import { WordByWord } from './ui/word-by-word'
 
 // remove later
 const sleep = async (ms: number) => await new Promise(resolve => setTimeout(resolve, ms))
 
 function Subscribe () {
+  const phrase = 'ÚNETE A NUESTRO BOLETÍN SEMANAL Y MANTENTE INFORMADO SOBRE EL DESARROLLO DE THE VOW OF NAZKA.'
   return (
     <section className='bg-[#0a0a0a] px-5 sm:px-10'>
       <div className='py-32 max-w-7xl mx-auto space-y-8'>
         <span className='flex justify-center'>
           <LinesNewsletter />
         </span>
-        <h2 className='[text-wrap:balance] text-center font-transducer text-base sm:text-lg lg:text-2xl font-semibold'>
-          ÚNETE A NUESTRO BOLETÍN SEMANAL Y MANTENTE INFORMADO SOBRE EL DESARROLLO DE THE VOW OF NAZKA.
-        </h2>
+        <WordByWord className='[text-wrap:balance] text-center font-transducer text-base sm:text-lg lg:text-2xl font-semibold space-x-2'>
+          {phrase}
+        </WordByWord>
         <form
           action={async (formData: FormData) => {
             'use server'
@@ -32,6 +34,9 @@ function Subscribe () {
               name='email'
               type='email'
               placeholder='TU EMAIL'
+              autoComplete='off'
+              autoCorrect='off'
+              autoCapitalize='off'
               className='rounded-none uppercase font-transducer w-full bg-transparent outline-none py-4 placeholder:transition-colors focus:placeholder:text-entropy-slateGray/70 placeholder:text-entropy-slateGray placeholder:font-semibold'
             />
             <SubmitButton variant='secondary' className='mx-auto w-max text-xs sm:text-base rounded-md sm:rounded-none h-11 sm:h-16 px-4'>

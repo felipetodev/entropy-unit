@@ -1,5 +1,3 @@
-// eslint-disable-next-line
-// @ts-nocheck
 'use client'
 
 import NextLink from 'next/link'
@@ -13,7 +11,7 @@ function BlogButton () {
     <Link
       href='/blog'
       whileHover={{ gap: '10px' }}
-      transition={{ type: 'spring', bounce: false }}
+      transition={{ type: 'spring', bounce: 0 }}
       className='gap-x-5 ml-auto flex items-center font-transducer font-semibold px-5 sm:px-10'
     >
       <span>IR AL DEV BLOG</span>
