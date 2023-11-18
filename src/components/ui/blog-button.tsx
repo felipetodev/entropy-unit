@@ -1,3 +1,5 @@
+// eslint-disable-next-line
+// @ts-nocheck weird framer-motion error
 'use client'
 
 import NextLink from 'next/link'
