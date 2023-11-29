@@ -31,12 +31,10 @@ export default function RootLayout ({
         baiJamjuree.className
       )}
       >
-        <div className='flex flex-col min-h-screen overflow-x-hidden'>
+        <div className='flex flex-col overflow-x-hidden'>
           <MainNav />
-          <div className='flex flex-col flex-1 '>
-            {children}
-            <Footer />
-          </div>
+          {children}
+          <Footer />
         </div>
       </body>
     </html>
