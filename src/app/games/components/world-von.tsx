@@ -24,9 +24,15 @@ function WorldVon () {
       </div>
       <Marquee className='mt-4'>
         {images.map((image, i) => (
-          // create a random height and width for each image
-          <li key={i} className='h-max min-w-[350px] md:min-w-[450px] rounded-3xl overflow-hidden'>
-            <img className='block h-full w-full object-cover' src={image} alt='tst' />
+          <li
+            key={i}
+            style={{
+              '--pusher-grow': (Math.random() * 10).toString(),
+              '--puller-grow': (Math.random() * 10).toString()
+            } as any}
+            className='min-h-full before:flex-[var(--pusher-grow,1)_1_auto] after:flex-[var(--puller-grow,1)_1_auto] flex flex-col h-max min-w-[350px] md:min-w-[450px] rounded-3xl overflow-hidden'
+          >
+            <img className='flex flex-col flex-[0_1_auto] block h-full w-full object-cover rounded-3xl' src={image} alt='tst' />
           </li>
         ))}
       </Marquee>

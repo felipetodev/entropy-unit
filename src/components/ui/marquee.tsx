@@ -31,7 +31,7 @@ function Marquee ({ className, direction = 'left', children }: Props) {
     <div ref={scrollerRef} className={cn('w-full inline-flex flex-nowrap data-[animated=true]:overflow-hidden', className)}>
       <ul
         ref={listRef}
-        className={cn('flex items-center gap-20 py-4 data-[animated=false]:flex-wrap data-[animated=true]:animate-infinite-scroll data-[animated=true]:w-max data-[animated=true]:flex-nowrap data-[direction=right]:animate-infinite-scroll-reverse')}
+        className={cn('flex gap-20 py-4 data-[animated=false]:flex-wrap data-[animated=true]:animate-infinite-scroll data-[animated=true]:w-max data-[animated=true]:flex-nowrap data-[direction=right]:animate-infinite-scroll-reverse')}
       >
         {children}
       </ul>
