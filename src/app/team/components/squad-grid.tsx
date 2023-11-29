@@ -67,7 +67,8 @@ const ROW_3 = [
   {
     title: 'AUDIO AND SOUND DESIGN',
     team: [
-      'Freddy Gazali'
+      'Freddy Gazali',
+      'Valentín Moreno'
     ]
   }
 ]

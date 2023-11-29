@@ -22,7 +22,7 @@ function WorldVon () {
           <h3 className='hidden sm:flex'>OF NAZKA</h3>
         </div>
       </div>
-      <Marquee className='-mt-14 sm:-mt-10'>
+      <Marquee className='mt-4'>
         {images.map((image, i) => (
           // create a random height and width for each image
           <li key={i} className='h-max min-w-[350px] md:min-w-[450px] rounded-3xl overflow-hidden'>
@@ -33,12 +33,12 @@ function WorldVon () {
       <div className='flex flex-col sm:flex-row items-center justify-center gap-[40px] sm:gap-[60px] py-10 px-6'>
         <div className='border-l border-entropy-red max-w-sm'>
           <p className='ml-6'>
-            Los Eidolon reinaron en Astrix, otorgando dones a los humanos, incluyendo la clarividencia y la fuerza bruta a "los cazadores".
+            Cuando se creó el juramento de Nazka para encerrar la corrupción y que no devorara todo el continente, Aestria también perdió su capital, asediando las ciudades pequeñas con refugiados y las planicies con campamentos.
           </p>
         </div>
         <div className='border-l border-entropy-red max-w-sm'>
           <p className='ml-6'>
-            El último cazador se enfrenta a las entidades astrales para liberar almas humanas contaminadas.
+            Los pueblos alejados como los herreros del norte o los cazadores de la neblina no se vieron afectados por la corrupción, pero al perder los gremios perdieron su contacto con el resto del mundo.
           </p>
         </div>
       </div>

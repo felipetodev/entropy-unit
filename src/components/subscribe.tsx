@@ -1,12 +1,15 @@
+'use client'
+
+import { useState } from 'react'
 import { SubmitButton } from '@/app/actions/submit-button'
 import { LinesNewsletter } from './ui/icons'
 import { WordByWord } from './ui/word-by-word'
-
-// remove later
-const sleep = async (ms: number) => await new Promise(resolve => setTimeout(resolve, ms))
+import { sendForm } from '@/app/actions/form'
+import { cn } from '@/lib/utils'
 
 function Subscribe () {
-  const phrase = 'ÚNETE A NUESTRO BOLETÍN SEMANAL Y MANTENTE INFORMADO SOBRE EL DESARROLLO DE THE VOW OF NAZKA.'
+  const [message, setMessage] = useState('')
+  const phrase = 'ÚNETE A NUESTRO BOLETÍN Y MANTENTE INFORMADO SOBRE EL DESARROLLO DE THE VOW OF NAZKA.'
   return (
     <section className='bg-[#0a0a0a] px-5 sm:px-10'>
       <div className='py-32 max-w-7xl mx-auto space-y-8'>
@@ -18,13 +21,8 @@ function Subscribe () {
         </WordByWord>
         <form
           action={async (formData: FormData) => {
-            'use server'
-            await sleep(3000)
-            const email = formData.get('email')
-
-            console.log({
-              email
-            })
+            const { message } = await sendForm(formData, 'newsletter')
+            setMessage(message)
           }}
           className='flex flex-col'
         >
@@ -44,8 +42,11 @@ function Subscribe () {
             </SubmitButton>
           </div>
         </form>
-        <p className='invisible text-xs text-center sm:text-start font-transducer text-entropy-red font-semibold'>
-          INGRESA UN EMAIL VÁLIDO
+        <p className={cn('invisible text-xs text-center sm:text-start font-transducer text-entropy-red font-semibold', {
+          visible: message
+        })}
+        >
+          {message}
         </p>
       </div>
     </section>

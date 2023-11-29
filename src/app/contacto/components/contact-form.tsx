@@ -1,15 +1,18 @@
-import { SubmitButton } from '@/app/actions/submit-button'
+'use client'
 
-// remove later
-const sleep = async (ms: number) => await new Promise(resolve => setTimeout(resolve, ms))
+import { useState } from 'react'
+import { sendForm } from '@/app/actions/form'
+import { SubmitButton } from '@/app/actions/submit-button'
+import { cn } from '@/lib/utils'
 
 function ContactForm () {
+  const [message, setMessage] = useState('')
   return (
     <form
       className='flex flex-col w-full mt-[100px] mb-10'
       action={async (formData: FormData) => {
-        'use server'
-        await sleep(3000)
+        const { message } = await sendForm(formData, 'contact')
+        setMessage(message)
       }}
     >
       <div className='sm:flex w-full'>
@@ -42,8 +45,11 @@ function ContactForm () {
         autoComplete='off'
         className='h-56 uppercase font-transducer bg-transparent outline-none py-4 placeholder:text-entropy-grayUnit placeholder:font-semibold rounded-none border-b border-entropy-slateGray placeholder:focus:text-entropy-red placeholder:transition-all'
       />
-      <span className='invisible my-5 text-xs text-center sm:text-start font-transducer text-entropy-red font-semibold'>
-        INGRESA UN EMAIL VÁLIDO
+      <span className={cn('invisible my-5 text-xs text-center sm:text-start font-transducer text-entropy-red font-semibold', {
+        visible: message
+      })}
+      >
+        {message}
       </span>
       <SubmitButton>
         ENVIAR

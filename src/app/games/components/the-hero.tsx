@@ -10,10 +10,10 @@ function TheHero () {
             EL HÉROE
           </h2>
           <p>
-            El último cazador (FALTA NOMBRE) es un jóven de 18 años, huérfano y criado por la aldea.
+            En este mundo sólo los magos pueden soñar, pero contadas personas en la historia pueden controlar sus sueños como tú.
             <br />
             <br />
-            Es un cazador nato, con habilidades para la batalla cuerpo a cuerpo y el uso de armas. Su objetivo es encontrar su origen y liberar a su pueblo.
+            Con tu potencial y determinación de reconstruir lo que perdieron, recluta a tus aliados y aprende acerca de los gremios y sus clases para forjar nuevos juramentos y recuperar los castillos perdidos de los gremios.
           </p>
         </div>
         <div className='bg-neutral-500 h-[500px] rounded-3xl overflow-hidden'>

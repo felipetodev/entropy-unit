@@ -3,18 +3,21 @@ import Video from '@/components/ui/video'
 
 function JourneySection () {
   return (
-    <section className='relative py-28 overflow-hidden'>
+    <section id='down' className='relative py-28 overflow-hidden'>
       <div className='px-5 md:px-20 relative grid grid-cols-1 md:grid-cols-2 gap-[40px] lg:gap-[100px] w-full h-full max-w-[2000px] mx-auto'>
         <div className='bg-neutral-500 h-[500px] rounded-3xl overflow-hidden'>
           <Video src='/ride.mp4' className='object-none object-[50%,50%]' />
         </div>
         <div className='flex flex-col justify-center gap-y-10 z-10'>
-          <h2 id='the-journey' className='scroll-m-[580px] sm:scroll-m-[260px] font-semibold text-4xl font-transducer'>EL VIAJE</h2>
+          <h2 id='the-journey' className='uppercase font-semibold text-4xl font-transducer'>
+            El juramento de Nazka se está quebrando
+          </h2>
+          {/* Change for markdown */}
           <p>
-            Acompaña al último cazador en su búsqueda por su identidad y la liberación de su pueblo de las entidades astrales.
+            Recorre Aestriae y crea el último gremio de Nazka, recluta a tus aliados y recupera la capital de la corrupción.
             <br />
             <br />
-            El juego combina combate cuerpo a cuerpo, habilidades de caza y la invocación de dioses para desbloquear poderes especiales.
+            Elige tu clase, combate como guerrero, mago, arquero, duelista, ¡o cambia tu clase para una mejor sinergia con tus compañeros!.
           </p>
         </div>
       </div>

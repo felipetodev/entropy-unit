@@ -1,3 +1,5 @@
+// eslint-disable-next-line
+// @ts-nocheck weird framer-motion error
 'use client'
 
 import { useEffect, useState } from 'react'
@@ -5,7 +7,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import NavMenu from './nav-menu'
 import { MenuIcon } from './ui/menu'
-import { AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { devMark } from '@/lib/utils'
 
 function MainNav () {
@@ -35,7 +37,12 @@ function MainNav () {
 
   return (
     <>
-      <div className='fixed top-0 left-0 w-full h-16 sm:h-20 z-50 mt-5 px-5 sm:px-10'>
+      <motion.div
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ delay: 0.8, type: 'spring', bounce: 0 }}
+        className='fixed top-0 left-0 w-full h-16 sm:h-20 z-50 mt-5 px-5 sm:px-10'
+      >
         <main className='relative z-30 flex h-full border-b border-entropy-slateGray'>
           <Link
             href='/'
@@ -57,7 +64,7 @@ function MainNav () {
           </div>
         </main>
         <div className='absolute z-20 h-[calc(64px+20px)] sm:h-[calc(80px+20px)] w-full left-0 -top-[20px] bg-gradient-to-t from-transparent from-4% to-100% to-entropy-black/50' />
-      </div>
+      </motion.div>
       <AnimatePresence>
         {isOpen && (
           <NavMenu onClick={handleClick} />
