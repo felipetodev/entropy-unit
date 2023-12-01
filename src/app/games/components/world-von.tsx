@@ -11,15 +11,15 @@ const images = [
 function WorldVon () {
   return (
     <section className='overflow-hidden'>
-      <div className='px-5 sm:px-10 font-transducer flex items-center justify-center flex-col sm:flex-row mt-32 text-transparent bg-clip-text bg-gradient-to-b from-entropy-slateGray to-entropy-grayUnit'>
-        <h2 className='text-[45px] sm:text-7xl md:text-[8rem] font-semibold '>
+      <div className='px-5 gap-x-4 sm:px-10 font-transducer flex items-center justify-center flex-col sm:flex-row mt-32 text-transparent bg-clip-text bg-gradient-to-b from-entropy-slateGray to-entropy-grayUnit'>
+        <h2 className='text-[45px] md:text-[4.5rem] lg:text-[8rem] font-semibold '>
           EL MUNDO
         </h2>
-        <div className='md:ml-4 flex sm:flex-col text-[18px] sm:text-2xl text-entropy-slateGray font-semibold'>
-          <h3 className='sm:hidden'>DE THE VOW OF NAZKA</h3>
-          <span className='hidden sm:flex'>DE</span>
-          <h3 className='hidden sm:flex'>THE VOW</h3>
-          <h3 className='hidden sm:flex'>OF NAZKA</h3>
+        <div className='md:ml-4 flex sm:flex-col text-entropy-slateGray font-semibold md:mt-2 lg:mt-4'>
+          <h3 className='sm:hidden text-[18px] sm:text-2xl'>DE THE VOW OF NAZKA</h3>
+          <span className='hidden sm:flex text-sm lg:text-2xl'>DE</span>
+          <h3 className='hidden sm:flex text-sm lg:text-2xl'>THE VOW</h3>
+          <h3 className='hidden sm:flex text-sm lg:text-2xl'>OF NAZKA</h3>
         </div>
       </div>
       <Marquee className='mt-4'>
