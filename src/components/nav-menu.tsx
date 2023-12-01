@@ -41,9 +41,10 @@ function NavMenu ({ onClick }: Props) {
               <Link
                 href={link.href}
                 onClick={onClick}
-                className='hover:text-entropy-red transition focus-visible:outline-none focus-visible:text-entropy-red'
+                className='hover:text-entropy-red transition-colors focus-visible:outline-none focus-visible:text-entropy-red relative after:absolute after:h-[1px] after:w-full after:bg-entropy-red after:-bottom-[1px] after:left-0 after:-cotransition-colors after:duration-300 after:ease-in-out after:transform after:scale-x-0 after:origin-left after:delay-75 hover:after:scale-x-100'
               >
                 <motion.span
+                  className='flex'
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{

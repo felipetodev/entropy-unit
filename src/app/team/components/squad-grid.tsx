@@ -76,7 +76,7 @@ const ROW_3 = [
 function SquadGrid () {
   return (
     <section className='bg-gradient-to-t from-[#121212] from-20% to-100% to-entropy-blueUnit px-5 sm:px-10 py-24'>
-      <div className='flex flex-col sm:flex-row font-transducer sm:h-[220px]'>
+      <div className='flex flex-col sm:flex-row font-transducer min-h-[200px] lg:h-[220px]'>
         {ROW_1.map((discipline, index) => (
           <div
             key={index} className={cn('flex flex-1 flex-col py-4 sm:p-4 lg:p-5 gap-y-5 border-b border-entropy-slateGray min-w-[180px]', {
@@ -92,7 +92,7 @@ function SquadGrid () {
           </div>
         ))}
       </div>
-      <div className='flex flex-col sm:flex-row font-transducer sm:h-[220px]'>
+      <div className='flex flex-col sm:flex-row font-transducer min-h-[200px] lg:h-[220px]'>
         {ROW_2.map((discipline, index) => (
           <div
             key={index} className={cn('flex flex-1 flex-col py-4 sm:p-4 lg:p-5 gap-y-5 border-b border-entropy-slateGray min-w-[180px]', {
@@ -108,7 +108,7 @@ function SquadGrid () {
           </div>
         ))}
       </div>
-      <div className='flex flex-col sm:flex-row font-transducer sm:h-[220px]'>
+      <div className='flex flex-col sm:flex-row font-transducer min-h-[200px] lg:h-[220px]'>
         {ROW_3.map((discipline, index) => (
           <div
             key={index} className={cn('flex flex-1 flex-col py-4 sm:p-4 lg:p-5 gap-y-5 border-b sm:border-b-transparent border-entropy-slateGray min-w-[180px]', {
