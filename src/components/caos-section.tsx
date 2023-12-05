@@ -7,14 +7,14 @@ function CaosSection () {
   return (
     <section className='md:h-[572px] px-5 sm:px-10'>
       <div className='grid grid-cols-1 md:grid-cols-2 md:gap-12 w-full h-full max-w-[2000px] mx-auto'>
-        <div className='w-full flex justify-center h-[320px] md:h-full'>
+        <div className='relative w-full flex justify-center h-[320px] md:h-full'>
           <img
-            className='absolute object-contain block  -mt-28 h-[500px] md:h-auto'
+            className='absolute object-contain block z-10 -mt-28 h-[500px] md:h-auto'
             src='/pj.png'
             alt='entropy pj'
           />
         </div>
-        <MotionDiv className='flex flex-col justify-center gap-y-10'>
+        <MotionDiv className='flex flex-col justify-center gap-y-10 z-10'>
           <h2 className='font-transducer text-xl sm:text-3xl lg:text-4xl font-semibold [text-wrap:balance]'>
             DEL CAOS A LA EVOLUCIÓN
           </h2>
