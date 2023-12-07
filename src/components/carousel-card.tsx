@@ -22,7 +22,7 @@ const variants = {
   }
 }
 
-function CarouselCard ({ card, index, isInView }: { card: Card, index: number, isInView: boolean }) {
+function CarouselCard ({ isBlog, card, index, isInView }: { isBlog?: boolean, card: Card, index: number, isInView: boolean }) {
   // find a better way to handle this
   const [parentHover, setParentHover] = useState(false)
   return (
@@ -50,15 +50,19 @@ function CarouselCard ({ card, index, isInView }: { card: Card, index: number, i
           />
           <div className='absolute w-full h-[262px] lg:h-[350px] rounded-[20px] bg-entropy-red/10' />
         </figure>
-        {/* <span className='z-10 font-transducer uppercase text-xs text-entropy-slateGray font-semibold'>
-          {new Date(card.date).toLocaleDateString('es-ES', { day: 'numeric', month: 'short' })}
-        </span>
-        <h3 className='z-10 font-transducer text-entropy-grayUnit font-semibold'>
-          {card.title}
-        </h3>
-        <p className='z-10'>
-          {card.description}
-        </p> */}
+        {isBlog && (
+          <>
+            <span className='z-10 font-transducer uppercase text-xs text-entropy-slateGray font-semibold'>
+              {new Date(card.date).toLocaleDateString('es-ES', { day: 'numeric', month: 'short' })}
+            </span>
+            <h3 className='z-10 font-transducer text-entropy-grayUnit font-semibold'>
+              {card.title}
+            </h3>
+            <p className='z-10'>
+              {card.description}
+            </p>
+          </>
+        )}
       </article>
     </Link>
   )
