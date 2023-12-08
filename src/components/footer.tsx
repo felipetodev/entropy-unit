@@ -1,5 +1,28 @@
-import Link from 'next/link'
 import { IconDiscord, IconInstagram, IconLinkedIn, IconYoutube } from './ui/icons'
+import FooterLinks from './footer-links'
+
+const SOCIALS = [
+  {
+    component: <IconInstagram className='h-7 w-7 sm:w-5 sm:h-5 lg:w-7 lg:h-7' />,
+    name: 'Instagram',
+    url: 'https://www.instagram.com/thevowofnazka'
+  },
+  {
+    component: <IconDiscord className='h-7 w-7 sm:w-5 sm:h-5 lg:w-7 lg:h-7' />,
+    name: 'Discord',
+    url: 'https://discord.com/invite/nkfU4xeRht'
+  },
+  {
+    component: <IconLinkedIn className='h-7 w-7 sm:w-5 sm:h-5 lg:w-7 lg:h-7' />,
+    name: 'LinkedIn',
+    url: 'https://www.linkedin.com/company/entropy-unit'
+  },
+  {
+    component: <IconYoutube className='h-7 w-7 sm:w-5 sm:h-5 lg:w-7 lg:h-7' />,
+    name: 'Youtube',
+    url: '#'
+  }
+]
 
 function Footer () {
   return (
@@ -10,49 +33,21 @@ function Footer () {
             MANTENTE AL DÍA
           </p>
           <ul className='flex space-x-10 sm:space-x-8 items-center [&_a]:transition'>
-            <li>
-              <a className='hover:text-entropy-red focus-visible:text-entropy-red' href='https://www.instagram.com/thevowofnazka' target='_blank' rel='noreferrer' aria-label='instagram'>
-                <IconInstagram className='h-7 w-7 sm:w-5 sm:h-5 lg:w-7 lg:h-7' />
-              </a>
-            </li>
-            <li>
-              <a className='hover:text-entropy-red focus-visible:text-entropy-red' href='https://discord.com/invite/nkfU4xeRht' target='_blank' aria-label='discord' rel='noreferrer'>
-                <IconDiscord className='h-7 w-7 sm:w-5 sm:h-5 lg:w-7 lg:h-7' />
-              </a>
-            </li>
-            <li>
-              <a className='hover:text-entropy-red focus-visible:text-entropy-red' href='https://www.linkedin.com/company/entropy-unit' target='_blank' rel='noreferrer' aria-label='linkedin'>
-                <IconLinkedIn className='h-7 w-7 sm:w-5 sm:h-5 lg:w-7 lg:h-7' />
-              </a>
-            </li>
-            <li>
-              <a className='hover:text-entropy-red focus-visible:text-entropy-red' href='#' target='_blank' aria-label='youtube'>
-                <IconYoutube className='h-7 w-7 sm:w-5 sm:h-5 lg:w-7 lg:h-7' />
-              </a>
-            </li>
+            {SOCIALS.map((social) => (
+              <li key={social.name}>
+                <a
+                  href={social.url}
+                  aria-label={social.name}
+                  target='_blank'
+                  rel='noreferrer'
+                  className='hover:text-entropy-red focus-visible:text-entropy-red'
+                >
+                  {social.component}
+                </a>
+              </li>
+            ))}
           </ul>
-          <ul className='flex md:ml-auto space-x-5 md:space-x-10 [&_a]:transition'>
-            <li className='text-[10px] md:text-[11px] lg:text-base'>
-              <Link href='/' className='hover:text-entropy-red focus-visible:text-entropy-red'>
-                HOME
-              </Link>
-            </li>
-            <li className='text-[10px] md:text-[11px] lg:text-base'>
-              <Link href='/games' className='hover:text-entropy-red focus-visible:text-entropy-red'>
-                JUEGOS
-              </Link>
-            </li>
-            <li className='text-[10px] md:text-[11px] lg:text-base'>
-              <Link href='/team' className='hover:text-entropy-red focus-visible:text-entropy-red'>
-                TEAM
-              </Link>
-            </li>
-            <li className='text-[10px] md:text-[11px] lg:text-base'>
-              <Link href='/contacto' className='hover:text-entropy-red focus-visible:text-entropy-red'>
-                CONTACTO
-              </Link>
-            </li>
-          </ul>
+          <FooterLinks />
         </header>
         <img loading='lazy' className='block w-full' src='/entropy-unit-big-text.svg' alt='Entropy Unit' />
         <div className='group flex flex-col md:flex-row justify-between text-entropy-slateGray text-xs'>
