@@ -41,7 +41,7 @@ function NavMenu ({ onClick }: Props) {
               <Link
                 href={link.href}
                 onClick={onClick}
-                className='hover:text-entropy-red transition-colors focus-visible:outline-none focus-visible:text-entropy-red relative after:absolute after:h-[1px] after:w-full after:bg-entropy-red after:-bottom-[1px] after:left-0 after:-cotransition-colors after:duration-300 after:ease-in-out after:transform after:scale-x-0 after:origin-left after:delay-75 hover:after:scale-x-100'
+                className='hover:text-entropy-red transition-colors focus-visible:outline-none focus-visible:text-entropy-red'
               >
                 <motion.span
                   className='flex'
@@ -58,15 +58,17 @@ function NavMenu ({ onClick }: Props) {
             </li>
           ))}
         </ul>
-        <motion.a
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
-          href='mailto:hola@entropyunit.com'
-          className='w-max text-sm sm:text-lg text-entropy-slateGray font-semibold mt-8 sm:mt-14 hover:text-entropy-grayUnit'
-        >
-          hola@entropyunit.com
-        </motion.a>
+        <div className='flex flex-col md:flex-row md:items-center justify-between w-full mt-8 sm:mt-14'>
+          <Link href='/blog' className='font-semibold uppercase transition-colors hover:text-entropy-red'>
+            Dev Blog
+          </Link>
+          <a
+            href='mailto:hola@entropyunit.com'
+            className='w-max text-sm sm:text-lg transition-colors text-entropy-slateGray font-semibold  hover:text-entropy-grayUnit'
+          >
+            hola@entropyunit.com
+          </a>
+        </div>
       </div>
     </motion.div>
   )
