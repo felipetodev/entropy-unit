@@ -12,7 +12,7 @@ function Release () {
           LANZAMIENTO
         </h2>
         <h3 className='text-2xl sm:text-5xl md:text-6xl lg:text-[80px] xl:text-[120px] font-semibold'>
-          PROXIMAMENTE
+          PRÓXIMAMENTE
         </h3>
         <div className='flex items-center py-4'>
           <IconWindows className='mr-6' />

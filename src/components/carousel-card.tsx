@@ -55,14 +55,15 @@ function CarouselCard ({ isBlog, card, index, isInView }: { isBlog?: boolean, ca
             <span className='z-10 font-transducer uppercase text-xs text-entropy-slateGray font-semibold'>
               {new Date(card.date).toLocaleDateString('es-ES', { day: 'numeric', month: 'short' })}
             </span>
-            <h3 className='z-10 font-transducer text-entropy-grayUnit font-semibold'>
-              {card.title}
-            </h3>
-            <p className='z-10'>
-              {card.description}
-            </p>
+
           </>
         )}
+        <h3 className='z-10 font-transducer text-entropy-grayUnit font-semibold'>
+          {card.title}
+        </h3>
+        <p className='z-10'>
+          {card.description}
+        </p>
       </article>
     </Link>
   )
