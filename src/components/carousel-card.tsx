@@ -32,7 +32,7 @@ function CarouselCard ({ isBlog, card, index, isInView }: { isBlog?: boolean, ca
       animate={isInView ? 'open' : 'closed'}
       custom={index}
       transition={{ duration: 0.5, delay: 0.1 * index }}
-      href='/blog'
+      href={isBlog ? `/blog/${index + 1}` : '/blog'}
       className='embla__slide'
       onMouseOver={() => setParentHover(true)}
       onMouseLeave={() => setParentHover(false)}
