@@ -14,7 +14,7 @@ function Hero () {
             <img className='block w-52 h-[120px] sm:h-[198px] sm:w-full max-w-max' src='/logo.svg' alt='The Vow of Nazka' />
           </MotionDiv>
           <MotionDiv delay={0.3} className='grid place-items-center text-center space-y-3 px-5 sm:px-10'>
-            <h1 className='font-transducer text-xl sm:text-3xl lg:text-4xl font-semibold [text-wrap:balance]'>
+            <h1 className='font-transducer text-xl sm:text-3xl lg:text-4xl font-semibold text-balance'>
               UN VIAJE SIN RETORNO CON LOS DIOSES
             </h1>
             <h2 className='font-transducer text-xl'>

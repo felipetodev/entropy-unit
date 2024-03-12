@@ -16,7 +16,7 @@ function Subscribe () {
         <span className='flex justify-center'>
           <LinesNewsletter />
         </span>
-        <WordByWord className='[text-wrap:balance] text-center font-transducer text-base sm:text-lg lg:text-2xl font-semibold space-x-2'>
+        <WordByWord className='text-balance text-center font-transducer text-base sm:text-lg lg:text-2xl font-semibold space-x-2'>
           {phrase}
         </WordByWord>
         <form

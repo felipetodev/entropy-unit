@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import NextLink from 'next/link'
 import { motion } from 'framer-motion'
 
@@ -23,8 +22,6 @@ const variants = {
 }
 
 function CarouselCard ({ isBlog, card, index, isInView }: { isBlog?: boolean, card: Card, index: number, isInView: boolean }) {
-  // find a better way to handle this
-  const [parentHover, setParentHover] = useState(false)
   return (
     <Link
       variants={variants}
@@ -34,18 +31,15 @@ function CarouselCard ({ isBlog, card, index, isInView }: { isBlog?: boolean, ca
       transition={{ duration: 0.5, delay: 0.1 * index }}
       href={isBlog ? `/blog/${index + 1}` : '/blog'}
       className='embla__slide'
-      onMouseOver={() => setParentHover(true)}
-      onMouseLeave={() => setParentHover(false)}
     >
       <article className='grid gap-y-3 p-1'>
         <figure className='relative flex items-end overflow-hidden z-10 h-[342px] lg:h-[430px]'>
-          <motion.video
+          <video
             loop
             muted
             autoPlay
             playsInline
-            animate={{ height: parentHover ? '100%' : '' }}
-            className='block h-[262px] lg:h-[350px] w-full object-cover rounded-[20px] z-10'
+            className='block h-[262px] lg:h-[350px] w-full object-cover rounded-[20px] z-10 hover:h-[100%] transition-all duration-300 ease-in-out'
             src='/video1.mp4'
           />
           <div className='absolute w-full h-[262px] lg:h-[350px] rounded-[20px] bg-entropy-red/10' />

@@ -15,7 +15,7 @@ function ContactPage () {
           <MotionDiv className='text-3xl sm:text-6xl font-semibold font-transducer text-center'>
             ¿NECESITAS DECIRNOS ALGO?
           </MotionDiv>
-          <MotionDiv delay={0.5} className='text-center [text-wrap:balance] uppercase'>
+          <MotionDiv delay={0.5} className='text-center text-balance uppercase'>
             <p>
               ¿Necesitas materiales de prensa? ¿Tienes una solicitud de medios?
             </p>

@@ -15,10 +15,10 @@ function CaosSection () {
           />
         </div>
         <MotionDiv className='flex flex-col justify-center gap-y-10 z-10'>
-          <h2 className='font-transducer text-xl sm:text-3xl lg:text-4xl font-semibold [text-wrap:balance]'>
+          <h2 className='font-transducer text-xl sm:text-3xl lg:text-4xl font-semibold text-balance'>
             DEL CAOS A LA EVOLUCIÓN
           </h2>
-          <p className='[text-wrap:balance]'>
+          <p className='text-balance'>
             Entropy Unit es más que solo un estudio de videojuegos. Somos narradores de corazón, comprometidos con contar historias de forma única y cautivadora. Reunido en Chile, nuestro equipo de profesionales dedicados abarca un conglomerado de apasionados por el arte y la ingeniería, cada uno aportando su toque único a nuestras creaciones.
           </p>
           <Link href='/team' className={cn(buttonVariants(), 'w-fit mx-auto sm:mx-0')}>
