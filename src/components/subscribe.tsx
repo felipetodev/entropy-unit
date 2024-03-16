@@ -7,9 +7,8 @@ import { WordByWord } from './ui/word-by-word'
 import { sendForm } from '@/app/actions/form'
 import { cn } from '@/lib/utils'
 
-function Subscribe () {
+function Subscribe ({ copy }: { copy: string }) {
   const [message, setMessage] = useState('')
-  const phrase = 'ÚNETE A NUESTRO BOLETÍN Y MANTENTE INFORMADO SOBRE EL DESARROLLO DE THE VOW OF NAZKA.'
   return (
     <section className='bg-[#0a0a0a] px-5 sm:px-10'>
       <div className='py-32 max-w-7xl mx-auto space-y-8'>
@@ -17,7 +16,7 @@ function Subscribe () {
           <LinesNewsletter />
         </span>
         <WordByWord className='text-balance text-center font-transducer text-base sm:text-lg lg:text-2xl font-semibold space-x-2'>
-          {phrase}
+          {copy}
         </WordByWord>
         <form
           action={async (formData: FormData) => {

@@ -3,19 +3,27 @@ import TeamHero from './components/hero'
 import TeamMarquee from './components/team-marquee'
 import SquadGrid from './components/squad-grid'
 import Mision from './components/mision'
+import { fetchPageContent } from '@/contentful/service'
 
 export const metadata = {
   title: 'Entropy Unit | Team'
 }
 
-function TeamPage () {
+async function TeamPage () {
+  const content = await fetchPageContent('teamPage')
   return (
     <main>
-      <TeamHero />
-      <Description />
-      <Mision />
+      <TeamHero
+        title={content?.heroTitle}
+        image={content.heroImage}
+      />
+      <Description
+        title={content?.teamTitle}
+        description={content?.teamDescription}
+      />
+      <Mision title={content?.teamDescriptionDown ?? ''} />
       <TeamMarquee />
-      <SquadGrid />
+      <SquadGrid grid={content.squadGrid} />
     </main>
   )
 }

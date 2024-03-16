@@ -1,22 +1,13 @@
 'use client'
 
+import { useRef } from 'react'
+import { useInView } from 'framer-motion'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import CarouselCard from './carousel-card'
 import BlogButton from './ui/blog-button'
-import { useInView } from 'framer-motion'
-import { useRef } from 'react'
 
-type Props = {
-  cards: Array<{
-    id: string
-    title: string
-    date: string
-    description: string
-  }>
-}
-
-function BlogCarousel ({ cards }: Props) {
+function BlogCarousel ({ posts }: any) {
   const [emblaRef] = useEmblaCarousel({
     align: 'start',
     skipSnaps: false,
@@ -30,11 +21,12 @@ function BlogCarousel ({ cards }: Props) {
     <section ref={container} className='mb-24 grid gap-y-10 place-content-center'>
       <div className='embla z-20 overflow-hidden' ref={emblaRef}>
         <div className='embla__container flex gap-x-10 mx-auto [&_figure]:rounded-[20px] [&_figure]:min-w-[16rem] sm:[&_figure]:min-w-[23rem] lg:[&_figure]:min-w-[32rem]'>
-          {cards.map((card, i) => (
+          {posts.map((post: any, i: number) => (
             <CarouselCard
-              key={card.id}
+              isBlog
+              key={post.slug}
               index={i}
-              card={card}
+              post={post}
               isInView={isInView}
             />
           ))}
