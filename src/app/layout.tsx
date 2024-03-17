@@ -1,9 +1,10 @@
-import './globals.css'
+import { Suspense } from 'react'
 import { Analytics } from '@vercel/analytics/react'
 import { Bai_Jamjuree } from 'next/font/google'
 import MainNav from '@/components/main-nav'
 import Footer from '@/components/footer'
 import { cn } from '@/lib/utils'
+import './globals.css'
 
 const baiJamjuree = Bai_Jamjuree({
   subsets: ['latin'],
@@ -34,7 +35,9 @@ export default function RootLayout ({
         <div className='flex flex-col overflow-x-hidden'>
           <MainNav />
           {children}
-          <Footer />
+          <Suspense fallback={null}>
+            <Footer />
+          </Suspense>
         </div>
       </body>
     </html>

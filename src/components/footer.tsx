@@ -1,30 +1,30 @@
+import { Fragment } from 'react'
 import { IconDiscord, IconInstagram, IconLinkedIn, IconYoutube } from './ui/icons'
 import FooterLinks from './footer-links'
+import { fetchPageContent } from '@/contentful/service'
 
 const SOCIALS = [
   {
     component: <IconInstagram className='h-7 w-7 sm:w-5 sm:h-5 lg:w-7 lg:h-7' />,
-    name: 'Instagram',
-    url: 'https://www.instagram.com/thevowofnazka'
+    name: 'Instagram'
   },
   {
     component: <IconDiscord className='h-7 w-7 sm:w-5 sm:h-5 lg:w-7 lg:h-7' />,
-    name: 'Discord',
-    url: 'https://discord.com/invite/nkfU4xeRht'
+    name: 'Discord'
   },
   {
     component: <IconLinkedIn className='h-7 w-7 sm:w-5 sm:h-5 lg:w-7 lg:h-7' />,
-    name: 'LinkedIn',
-    url: 'https://www.linkedin.com/company/entropy-unit'
+    name: 'LinkedIn'
   },
   {
     component: <IconYoutube className='h-7 w-7 sm:w-5 sm:h-5 lg:w-7 lg:h-7' />,
-    name: 'Youtube',
-    url: '#'
+    name: 'Youtube'
   }
 ]
 
-function Footer () {
+async function Footer () {
+  const content = await fetchPageContent('footer')
+
   return (
     <div className='bg-entropy-darkBlue py-8 px-5 sm:px-10'>
       <footer className='max-w-[2000px] mx-auto space-y-10'>
@@ -33,18 +33,22 @@ function Footer () {
             MANTENTE AL DÍA
           </p>
           <ul className='flex space-x-10 sm:space-x-8 items-center [&_a]:transition'>
-            {SOCIALS.map((social) => (
-              <li key={social.name}>
-                <a
-                  href={social.url}
-                  aria-label={social.name}
-                  target='_blank'
-                  rel='noreferrer'
-                  className='hover:text-entropy-red focus-visible:text-entropy-red'
-                >
-                  {social.component}
-                </a>
-              </li>
+            {SOCIALS.map(({ name, component }) => (
+              <Fragment key={name}>
+                {content[name.toLowerCase()] && (
+                  <li>
+                    <a
+                      href={content[name.toLowerCase()] || '#'}
+                      aria-label={name}
+                      target='_blank'
+                      rel='noreferrer'
+                      className='hover:text-entropy-red focus-visible:text-entropy-red'
+                    >
+                      {component}
+                    </a>
+                  </li>
+                )}
+              </Fragment>
             ))}
           </ul>
           <FooterLinks />
