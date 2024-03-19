@@ -40,8 +40,8 @@ function GamesHero ({ title, buttonScrollCopy, image, logo, platformIcons, platf
                 <Image
                   key={index}
                   className='w-7 h-6'
-                  width={28}
-                  height={0}
+                  width={24}
+                  height={24}
                   src={icon.url}
                   alt={icon.title}
                 />
