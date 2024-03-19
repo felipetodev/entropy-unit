@@ -64,7 +64,7 @@ async function BlogPost ({ params }: { params: { id: string } }) {
                 year: 'numeric',
                 month: 'long',
                 day: 'numeric'
-              }).format(new Date(post.createdAt))}
+              }).format(new Date(post.timestamptz))}
             </span>
           </div>
         </div>
