@@ -3,7 +3,10 @@ import { fetchBlogPosts } from '@/contentful/service'
 import { notFound } from 'next/navigation'
 
 export default async function Blog () {
-  const posts = await fetchBlogPosts({ include: 10 })
+  const posts = await fetchBlogPosts({
+    include: 10,
+    select: 'sys.createdAt,fields.articlePreview,fields.slug,fields.articleTitle,fields.articleDescription,fields.authorImage'
+  })
 
   if (!posts.length) {
     notFound()
