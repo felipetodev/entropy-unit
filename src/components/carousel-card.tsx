@@ -67,10 +67,7 @@ function CarouselCard ({ isBlog, post, index, isInView }: { isBlog?: boolean, po
         {isBlog && (
           <>
             <span className='z-10 font-transducer uppercase text-xs text-entropy-slateGray font-semibold'>
-              {new Intl.DateTimeFormat('es-ES', {
-                month: 'short',
-                day: 'numeric'
-              }).format(new Date(post.createdAt))}
+              {post.createdAt}
             </span>
 
           </>

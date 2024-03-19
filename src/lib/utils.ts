@@ -31,7 +31,14 @@ export const normalizeContentfulData = ({ fields, isBlog }: { fields: any, isBlo
       const response: any = normalizeContentfulData({ fields: value })
 
       return isBlog
-        ? { ...acc, [key]: response.fields ?? response, createdAt: response.sys?.createdAt }
+        ? {
+            ...acc,
+            [key]: response.fields ?? response,
+            createdAt: new Intl.DateTimeFormat('es-ES', {
+              month: 'short',
+              day: 'numeric'
+            }).format(new Date(response.sys.createdAt))
+          }
         : { ...acc, [key]: response.fields ?? response }
     }
 
