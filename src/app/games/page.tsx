@@ -39,6 +39,8 @@ async function GamesPage () {
       <Release
         title={content.releaseTitle}
         releaseDate={content.releaseDateTitle}
+        platformIcons={content.releasePlatformIcons}
+        platformCopy={content.releasePlatformDetailCopy}
       />
     </main>
   )
