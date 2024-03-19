@@ -10,6 +10,7 @@ export const sendForm = async (formData: FormData, type: 'newsletter' | 'contact
   const email = formData.get('email') as string
   const subject = formData.get('subject') as string ?? ''
   const message = formData.get('message') as string
+  const to = formData.get('to') as string ?? 'entropyunit1@gmail.com'
 
   const isNewsletter = type === 'newsletter'
 
@@ -17,7 +18,7 @@ export const sendForm = async (formData: FormData, type: 'newsletter' | 'contact
     from: isNewsletter
       ? 'Entropy Unit [Newsletter] <newsletter@entropyunit.com>'
       : 'Entropy Unit [Contact] <contact@entropyunit.com>',
-    to: 'entropyunit1@gmail.com',
+    to,
     subject,
     text: message,
     // improve this with https://react.email

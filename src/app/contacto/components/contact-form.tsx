@@ -5,7 +5,7 @@ import { sendForm } from '@/app/actions/form'
 import { SubmitButton } from '@/app/actions/submit-button'
 import { cn } from '@/lib/utils'
 
-function ContactForm () {
+function ContactForm ({ emailTo }: { emailTo: string }) {
   const [message, setMessage] = useState('')
   return (
     <form
@@ -16,6 +16,11 @@ function ContactForm () {
       }}
     >
       <div className='sm:flex w-full'>
+        <input
+          type='hidden'
+          name='to'
+          value={emailTo}
+        />
         <input
           required
           className='w-full sm:w-[calc(100%-20px)] uppercase font-transducer bg-transparent outline-none py-4 placeholder:text-entropy-grayUnit placeholder:font-semibold rounded-none border-t sm:border-y border-entropy-slateGray placeholder:focus:text-entropy-red placeholder:transition-all'

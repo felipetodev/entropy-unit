@@ -26,7 +26,7 @@ async function ContactPage () {
             </MotionDiv>
           )}
         </div>
-        <ContactForm />
+        <ContactForm emailTo={content.emailContactForm} />
       </section>
       <ContactMarquee
         title={content.emailSliderCopy}
