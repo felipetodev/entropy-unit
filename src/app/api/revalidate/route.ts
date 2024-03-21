@@ -1,4 +1,4 @@
-import { revalidatePath } from 'next/cache'
+import { revalidatePath, revalidateTag } from 'next/cache'
 import { NextResponse, type NextRequest } from 'next/server'
 
 const { REVALIDATE_SECRET = '' } = process.env
@@ -12,6 +12,7 @@ export async function POST (req: NextRequest) {
   }
 
   if (secret === REVALIDATE_SECRET) {
+    if (route.includes('blog')) revalidateTag('articles')
     revalidatePath(route)
 
     return NextResponse.json({ success: true, now: Date.now() }, { status: 200 })

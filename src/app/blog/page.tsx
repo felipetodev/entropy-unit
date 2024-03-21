@@ -5,7 +5,7 @@ import { notFound } from 'next/navigation'
 export default async function Blog () {
   const posts = await fetchBlogPosts({
     limit: 9,
-    select: 'sys.createdAt,fields.articlePreview,fields.slug,fields.articleTitle,fields.articleDescription,fields.authorImage'
+    select: ['sys.createdAt,fields.articlePreview,fields.slug,fields.articleTitle,fields.articleDescription,fields.authorImage']
   })
 
   if (!posts.length) {
