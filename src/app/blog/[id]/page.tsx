@@ -6,7 +6,7 @@ import { client } from '@/contentful/service'
 import { normalizeContentfulData } from '@/lib/utils'
 
 async function fetchBlogPost (slug: string) {
-  const post = await client.getEntries({
+  const post = await client().getEntries({
     content_type: 'blogLayout',
     limit: 1,
     'fields.slug': slug
