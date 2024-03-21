@@ -21,6 +21,7 @@ export async function fetchBlogPosts ({ include, select }: FixedQueryOptions & F
   const posts = await client.getEntries({
     content_type: 'blogLayout',
     include,
+    order: ['sys.createdAt'],
     ...select && { select }
   })
 
