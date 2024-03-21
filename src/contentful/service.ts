@@ -17,10 +17,10 @@ export async function fetchPageContent (page: string) {
   return content.items.map((item) => normalizeContentfulData({ fields: item.fields }) as any)[0]
 }
 
-export async function fetchBlogPosts ({ include, select }: FixedQueryOptions & FixedPagedOptions & { select?: string }) {
+export async function fetchBlogPosts ({ limit, select }: FixedQueryOptions & FixedPagedOptions & { select?: string }) {
   const posts = await client.getEntries({
     content_type: 'blogLayout',
-    include,
+    limit,
     order: ['-sys.createdAt'],
     ...select && { select }
   })
