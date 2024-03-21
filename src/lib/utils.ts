@@ -30,7 +30,7 @@ export const normalizeContentfulData = ({ fields, isBlog }: { fields: any, isBlo
     if (typeof value === 'object' && (value.sys || key === 'fields')) {
       const response: any = normalizeContentfulData({ fields: value })
 
-      return isBlog
+      return isBlog && response.sys.createdAt
         ? {
             ...acc,
             [key]: response.fields ?? response,
