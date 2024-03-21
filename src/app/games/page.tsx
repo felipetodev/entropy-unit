@@ -24,7 +24,7 @@ async function GamesPage () {
       <JourneySection
         title={content.journeyTitle}
         description={content.journeyDescription}
-        video={content.journeyVideo}
+        asset={content.journeyVideo}
       />
       <WorldVon
         images={content.carousel}
@@ -34,7 +34,7 @@ async function GamesPage () {
       <TheHero
         title={content.characterTitle}
         description={content.characterDescription}
-        video={content.characterVideo}
+        asset={content.characterVideo}
       />
       <Release
         title={content.releaseTitle}
