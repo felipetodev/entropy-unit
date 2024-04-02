@@ -4,10 +4,10 @@ import { useState } from 'react'
 import { SubmitButton } from '@/app/actions/submit-button'
 import { LinesNewsletter } from './ui/icons'
 import { WordByWord } from './ui/word-by-word'
-import { sendForm } from '@/app/actions/form'
+import { sendForm, sendNewsletterGoogleSheet } from '@/app/actions/form'
 import { cn } from '@/lib/utils'
 
-function Subscribe ({ copy }: { copy: string }) {
+function Subscribe ({ copy = 'Newsletter', isJoinNewsletter }: { copy: string, isJoinNewsletter?: boolean }) {
   const [message, setMessage] = useState('')
   return (
     <section className='bg-[#0a0a0a] px-5 sm:px-10'>
@@ -20,8 +20,13 @@ function Subscribe ({ copy }: { copy: string }) {
         </WordByWord>
         <form
           action={async (formData: FormData) => {
-            const { message } = await sendForm(formData, 'newsletter')
-            setMessage(message)
+            if (isJoinNewsletter) {
+              const { message } = await sendNewsletterGoogleSheet(formData)
+              setMessage(message)
+            } else {
+              const { message } = await sendForm(formData, 'newsletter')
+              setMessage(message)
+            }
           }}
           className='flex flex-col'
         >

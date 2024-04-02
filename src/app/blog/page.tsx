@@ -2,6 +2,8 @@ import CarouselCard from '@/components/carousel-card'
 import { fetchBlogPosts } from '@/contentful/service'
 import { notFound } from 'next/navigation'
 
+export const revalidate = 10
+
 export default async function Blog () {
   const posts = await fetchBlogPosts({
     limit: 9,

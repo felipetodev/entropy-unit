@@ -15,7 +15,7 @@ async function TeamPage () {
     <main>
       <TeamHero
         title={content?.heroTitle}
-        image={content.heroImage}
+        wallpaper={content.heroImage}
       />
       <Description
         title={content?.teamTitle}

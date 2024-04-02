@@ -6,6 +6,8 @@ import Subscribe from '@/components/subscribe'
 import CarouselSkeleton from '@/components/carousel-skeleton'
 import { fetchPageContent } from '@/contentful/service'
 
+export const revalidate = 10
+
 export default async function Home () {
   const content = await fetchPageContent('homePage')
 
